@@ -1,136 +1,93 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <tv date="20250822140200 -0300" generator-info-name="Guia Gerado">
-  
-  <channel id="cartoonnetwork.br">
-    <display-name lang="pt">Cartoon Network</display-name>
-  </channel>
-  
-  <channel id="cartoonito.br">
-    <display-name lang="pt">Cartoonito</display-name>
-  </channel>
-  
-  <channel id="discoverykids.br">
-    <display-name lang="pt">Discovery Kids</display-name>
-  </channel>
-  
-  <channel id="gloob.br">
-    <display-name lang="pt">Gloob</display-name>
-  </channel>
-  
-  <channel id="gloobinho.br">
-    <display-name lang="pt">Gloobinho</display-name>
-  </channel>
-  
-  <channel id="nickjr.br">
-    <display-name lang="pt">Nick Jr</display-name>
-  </channel>
-  
-  <channel id="nickelodeon.br">
-    <display-name lang="pt">Nickelodeon</display-name>
-  </channel>
-  
-  <channel id="tooncast.br">
-    <display-name lang="pt">Tooncast</display-name>
-  </channel>
 
-  <programme start="20250822133000 -0300" stop="20250822143000 -0300" channel="cartoonnetwork.br"><title lang="pt">Jovens Titãs em Ação!</title></programme>
-  <programme start="20250822143000 -0300" stop="20250822150000 -0300" channel="cartoonnetwork.br"><title lang="pt">As Meninas Superpoderosas</title></programme>
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cartoonnetwork.br"><title lang="pt">O Incrível Mundo de Gumball</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="cartoonnetwork.br"><title lang="pt">Apenas um Show</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="cartoonnetwork.br"><title lang="pt">Urso Sem Curso</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822183000 -0300" channel="cartoonnetwork.br"><title lang="pt">Steven Universo</title></programme>
-  <programme start="20250822183000 -0300" stop="20250822190000 -0300" channel="cartoonnetwork.br"><title lang="pt">Clarence</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="cartoonnetwork.br"><title lang="pt">Dragon Ball Super</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="cartoonnetwork.br"><title lang="pt">Ben 10</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="cartoonnetwork.br"><title lang="pt">Hora de Aventura</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="cartoonnetwork.br"><title lang="pt">Gumball</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="cartoonnetwork.br"><title lang="pt">Jovens Titãs em Ação!</title></programme>
+  <channel id="cartoon-network.br"><display-name lang="pt">Cartoon Network</display-name></channel>
+  <channel id="cartoonito.br"><display-name lang="pt">Cartoonito</display-name></channel>
+  <channel id="discovery-kids.br"><display-name lang="pt">Discovery Kids</display-name></channel>
+  <channel id="gloob.br"><display-name lang="pt">Gloob</display-name></channel>
+  <channel id="gloobinho.br"><display-name lang="pt">Gloobinho</display-name></channel>
+  <channel id="nick-jr.br"><display-name lang="pt">Nick Jr</display-name></channel>
+  <channel id="nickelodeon.br"><display-name lang="pt">Nickelodeon</display-name></channel>
+  <channel id="tooncast.br"><display-name lang="pt">Tooncast</display-name></channel>
+
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="cartoon-network.br"><title lang="pt">O Incrível Mundo de Gumball</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cartoon-network.br"><title lang="pt">Os Jovens Titãs em Ação!</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="cartoon-network.br"><title lang="pt">Steven Universo</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="cartoon-network.br"><title lang="pt">Ben 10</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="cartoon-network.br"><title lang="pt">Hora de Aventura</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="cartoon-network.br"><title lang="pt">Meninas Superpoderosas</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="cartoon-network.br"><title lang="pt">Urso Sem Curso</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="cartoon-network.br"><title lang="pt">Apenas um Show</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cartoon-network.br"><title lang="pt">Filme Cartoon Network</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="cartoonito.br"><title lang="pt">Thomas e Seus Amigos</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cartoonito.br"><title lang="pt">O Show do Looney Tunes</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="cartoonito.br"><title lang="pt">Bugs Bunny Construtores</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="cartoonito.br"><title lang="pt">Coragem, o Cão Covarde</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="cartoonito.br"><title lang="pt">Scooby-Doo e Convidados</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="cartoonito.br"><title lang="pt">Tom & Jerry</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="cartoonito.br"><title lang="pt">Dino Ranch</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="cartoonito.br"><title lang="pt">A Turma da Mônica</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cartoonito.br"><title lang="pt">Tom e Jerry em Nova York</title></programme>
   
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cartoonito.br"><title lang="pt">Pocoyo</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822163000 -0300" channel="cartoonito.br"><title lang="pt">A Caverna da Tina</title></programme>
-  <programme start="20250822163000 -0300" stop="20250822170000 -0300" channel="cartoonito.br"><title lang="pt">Scooby-Doo! E o Povo Co-Co</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="cartoonito.br"><title lang="pt">Lucas e o Laboratório</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822180000 -0300" channel="cartoonito.br"><title lang="pt">O Show do Pica-Pau</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822183000 -0300" channel="cartoonito.br"><title lang="pt">Meu Amigo da Escola é um Macaco</title></programme>
-  <programme start="20250822183000 -0300" stop="20250822190000 -0300" channel="cartoonito.br"><title lang="pt">O Gato de Botas</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822193000 -0300" channel="cartoonito.br"><title lang="pt">As Novas Aventuras de Tom e Jerry</title></programme>
-  <programme start="20250822193000 -0300" stop="20250822203000 -0300" channel="cartoonito.br"><title lang="pt">A Turma do Manda-Chuva</title></programme>
-  <programme start="20250822203000 -0300" stop="20250822213000 -0300" channel="cartoonito.br"><title lang="pt">Corrida Maluca</title></programme>
-  <programme start="20250822213000 -0300" stop="20250822220000 -0300" channel="cartoonito.br"><title lang="pt">As Panteras</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="cartoonito.br"><title lang="pt">O Gato Félix</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="cartoonito.br"><title lang="pt">Super Gatinhos</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="discovery-kids.br"><title lang="pt">Peppa Pig</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="discovery-kids.br"><title lang="pt">O Show da Luna!</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="discovery-kids.br"><title lang="pt">Mundo Bita</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="discovery-kids.br"><title lang="pt">Super Wings</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="discovery-kids.br"><title lang="pt">Cantando com Patati Patatá</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="discovery-kids.br"><title lang="pt">Pocoyo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="discovery-kids.br"><title lang="pt">CoComelon</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="discovery-kids.br"><title lang="pt">Hello Kitty</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="discovery-kids.br"><title lang="pt">O Show da Luna!</title></programme>
 
-  <programme start="20250822130000 -0300" stop="20250822140000 -0300" channel="discoverykids.br"><title lang="pt">Peppa Pig</title></programme>
-  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="discoverykids.br"><title lang="pt">O Show da Luna!</title></programme>
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="discoverykids.br"><title lang="pt">Doki</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="discoverykids.br"><title lang="pt">Mini Beat Power Rockers</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="discoverykids.br"><title lang="pt">Topo Gigio</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822180000 -0300" channel="discoverykids.br"><title lang="pt">O Show do Bita</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="discoverykids.br"><title lang="pt">Show da Luna</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="discoverykids.br"><title lang="pt">O Mundo de Loli</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="discoverykids.br"><title lang="pt">Doki</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="discoverykids.br"><title lang="pt">Show da Luna</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="discoverykids.br"><title lang="pt">Mini Beat Power Rockers</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="discoverykids.br"><title lang="pt">Peppa Pig</title></programme>
-
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="gloob.br"><title lang="pt">Miraculous - As Aventuras de Ladybug</title></programme>
   <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="gloob.br"><title lang="pt">D.P.A. - Detetives do Prédio Azul</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="gloob.br"><title lang="pt">Miraculous: As Aventuras de Ladybug</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="gloob.br"><title lang="pt">Alvin e os Esquilos</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822180000 -0300" channel="gloob.br"><title lang="pt">Ladybug</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="gloob.br"><title lang="pt">Bugados</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="gloob.br"><title lang="pt">D.P.A.</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="gloob.br"><title lang="pt">Escola de Gênios</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="gloob.br"><title lang="pt">Valentins</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="gloob.br"><title lang="pt">Miraculous</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="gloob.br"><title lang="pt">D.P.A. - Detetives do Prédio Azul</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="gloob.br"><title lang="pt">Alvin e os Esquilos</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="gloob.br"><title lang="pt">Bugados</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="gloob.br"><title lang="pt">Escola de Gênios</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="gloob.br"><title lang="pt">Miraculous World</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="gloob.br"><title lang="pt">D.P.A. - Detetives do Prédio Azul</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="gloob.br"><title lang="pt">Dino Dan</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="gloob.br"><title lang="pt">Miraculous - As Aventuras de Ladybug</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="gloobinho.br"><title lang="pt">Mundo Bita</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="gloobinho.br"><title lang="pt">Detetives do Prédio Azul - Aventura</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="gloobinho.br"><title lang="pt">Pipas</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="gloobinho.br"><title lang="pt">O Show da Luna!</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="gloobinho.br"><title lang="pt">Pocoyo</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="gloobinho.br"><title lang="pt">CoComelon</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="gloobinho.br"><title lang="pt">Hello Kitty</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="gloobinho.br"><title lang="pt">Mundo Bita</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="gloobinho.br"><title lang="pt">Cantando com Patati Patatá</title></programme>
 
-  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="gloobinho.br"><title lang="pt">Mundo Bita</title></programme>
-  <programme start="20250822153000 -0300" stop="20250822163000 -0300" channel="gloobinho.br"><title lang="pt">Vamos Brincar com a Laura</title></programme>
-  <programme start="20250822163000 -0300" stop="20250822170000 -0300" channel="gloobinho.br"><title lang="pt">O Quebra-Cabeça da Laura</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="gloobinho.br"><title lang="pt">Senninha</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822180000 -0300" channel="gloobinho.br"><title lang="pt">Mundo Bita</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822183000 -0300" channel="gloobinho.br"><title lang="pt">Peppa Pig</title></programme>
-  <programme start="20250822183000 -0300" stop="20250822193000 -0300" channel="gloobinho.br"><title lang="pt">Vamos Brincar com a Laura</title></programme>
-  <programme start="20250822193000 -0300" stop="20250822200000 -0300" channel="gloobinho.br"><title lang="pt">O Quebra-Cabeça da Laura</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="gloobinho.br"><title lang="pt">Mundo Bita</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="gloobinho.br"><title lang="pt">Vamos Brincar com a Laura</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="gloobinho.br"><title lang="pt">O Quebra-Cabeça da Laura</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="gloobinho.br"><title lang="pt">Senninha</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="nick-jr.br"><title lang="pt">Patrulha Canina</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="nick-jr.br"><title lang="pt">Dora, a Aventureira</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="nick-jr.br"><title lang="pt">Bubble Guppies</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="nick-jr.br"><title lang="pt">Blaze and the Monster Machines</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="nick-jr.br"><title lang="pt">Shimmer and Shine</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="nick-jr.br"><title lang="pt">Patrulha Canina</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="nick-jr.br"><title lang="pt">Dora, a Aventureira</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="nick-jr.br"><title lang="pt">Bubble Guppies</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nick-jr.br"><title lang="pt">Blaze and the Monster Machines</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="nickjr.br"><title lang="pt">Patrulha Canina</title></programme>
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="nickjr.br"><title lang="pt">Dora, a Aventureira</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="nickjr.br"><title lang="pt">Aventura de Crianças</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="nickjr.br"><title lang="pt">Patrulha Canina</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822180000 -0300" channel="nickjr.br"><title lang="pt">Blaze and the Monster Machines</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="nickjr.br"><title lang="pt">Bubble Guppies</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="nickjr.br"><title lang="pt">Shimmer and Shine</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="nickjr.br"><title lang="pt">Nella, a Princesa Cavaleira</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="nickjr.br"><title lang="pt">Patrulha Canina</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="nickjr.br"><title lang="pt">Dora, a Aventureira</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="nickjr.br"><title lang="pt">Aventura de Crianças</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="nickelodeon.br"><title lang="pt">Bob Esponja</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="nickelodeon.br"><title lang="pt">Os Padrinhos Mágicos</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="nickelodeon.br"><title lang="pt">Henry Danger</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="nickelodeon.br"><title lang="pt">The Thundermans</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="nickelodeon.br"><title lang="pt">As Tartarugas Ninja</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="nickelodeon.br"><title lang="pt">Bob Esponja</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="nickelodeon.br"><title lang="pt">A Família Loud</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="nickelodeon.br"><title lang="pt">Os Padrinhos Mágicos</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nickelodeon.br"><title lang="pt">Filme Nick</title></programme>
 
-  <programme start="20250822130000 -0300" stop="20250822140000 -0300" channel="nickelodeon.br"><title lang="pt">Bob Esponja</title></programme>
-  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="nickelodeon.br"><title lang="pt">Os Padrinhos Mágicos</title></programme>
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="nickelodeon.br"><title lang="pt">Henry Danger</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="nickelodeon.br"><title lang="pt">The Thundermans</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822173000 -0300" channel="nickelodeon.br"><title lang="pt">Bob Esponja</title></programme>
-  <programme start="20250822173000 -0300" stop="20250822180000 -0300" channel="nickelodeon.br"><title lang="pt">The Loud House</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="nickelodeon.br"><title lang="pt">iCarly</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="nickelodeon.br"><title lang="pt">Danger Force</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="nickelodeon.br"><title lang="pt">The Thundermans</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="nickelodeon.br"><title lang="pt">Henry Danger</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="nickelodeon.br"><title lang="pt">Bob Esponja</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="nickelodeon.br"><title lang="pt">Os Padrinhos Mágicos</title></programme>
-
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="tooncast.br"><title lang="pt">Tom e Jerry</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="tooncast.br"><title lang="pt">Looney Tunes</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="tooncast.br"><title lang="pt">Os Jetsons</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="tooncast.br"><title lang="pt">Os Flintstones</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="tooncast.br"><title lang="pt">Scooby-Doo!</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="tooncast.br"><title lang="pt">Os Ursinhos Carinhosos</title></programme>
-  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="tooncast.br"><title lang="pt">Tom e Jerry</title></programme>
-  <programme start="20250822220000 -0300" stop="20250822230000 -0300" channel="tooncast.br"><title lang="pt">Looney Tunes</title></programme>
-  <programme start="20250822230000 -0300" stop="20250823000000 -0300" channel="tooncast.br"><title lang="pt">Corrida Maluca</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="tooncast.br"><title lang="pt">Os Flinstones</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="tooncast.br"><title lang="pt">O Gato Félix</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="tooncast.br"><title lang="pt">Os Jetsons</title></programme>
+  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="tooncast.br"><title lang="pt">Tom & Jerry</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="tooncast.br"><title lang="pt">Scooby-Doo, Cadê Você?</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="tooncast.br"><title lang="pt">Corrida Maluca</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="tooncast.br"><title lang="pt">Looney Tunes</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="tooncast.br"><title lang="pt">Popeye, o Marinheiro</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tooncast.br"><title lang="pt">Hanna-Barbera</title></programme>
 
 </tv>
