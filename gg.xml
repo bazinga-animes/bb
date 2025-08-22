@@ -1,5 +1,459 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv date="20250822140200 -0300" generator-info-name="Guia Gerado">
+
+  <channel id="amazonprime.br"><display-name lang="pt">Amazon Prime Video</display-name></channel>
+  <channel id="amazonprime2.br"><display-name lang="pt">Amazon Prime Video 2</display-name></channel>
+  <channel id="at.orf.at"><display-name lang="pt">AT: ORF</display-name></channel>
+  <channel id="canalgoat.br"><display-name lang="pt">Canal GOAT</display-name></channel>
+  <channel id="canalgoat2.br"><display-name lang="pt">Canal GOAT 2</display-name></channel>
+  <channel id="cazetv.br"><display-name lang="pt">CazéTV</display-name></channel>
+  <channel id="cazetv2.br"><display-name lang="pt">CazéTV 2</display-name></channel>
+  <channel id="cazetv3.br"><display-name lang="pt">CazéTV 3</display-name></channel>
+  <channel id="combate.br"><display-name lang="pt">Combate</display-name></channel>
+  <channel id="disneyplus.br"><display-name lang="pt">Disney Plus</display-name></channel>
+  <channel id="espn.br"><display-name lang="pt">ESPN</display-name></channel>
+  <channel id="espn2.br"><display-name lang="pt">ESPN 2</display-name></channel>
+  <channel id="espn3.br"><display-name lang="pt">ESPN 3</display-name></channel>
+  <channel id="espn4.br"><display-name lang="pt">ESPN 4</display-name></channel>
+  <channel id="espn5.br"><display-name lang="pt">ESPN 5</display-name></channel>
+  <channel id="espn6.br"><display-name lang="pt">ESPN 6</display-name></channel>
+  <channel id="fishtv.br"><display-name lang="pt">FishTV</display-name></channel>
+  <channel id="max.br"><display-name lang="pt">Max</display-name></channel>
+  <channel id="nossofutebol.br"><display-name lang="pt">Nosso Futebol</display-name></channel>
+  <channel id="nsports.br"><display-name lang="pt">NSports</display-name></channel>
+  <channel id="polsatsport.pl"><display-name lang="pt">PL: Polsat Sport Premium</display-name></channel>
+  <channel id="elevensports.pt"><display-name lang="pt">PT: Eleven Sports</display-name></channel>
+  <channel id="elevensports2.pt"><display-name lang="pt">PT: Eleven Sports 2</display-name></channel>
+  <channel id="elevensports3.pt"><display-name lang="pt">PT: Eleven Sports 3</display-name></channel>
+  <channel id="elevensports5.pt"><display-name lang="pt">PT: Eleven Sports 5</display-name></channel>
+  <channel id="elevensports6.pt"><display-name lang="pt">PT: Eleven Sports 6</display-name></channel>
+  <channel id="sporttv.pt"><display-name lang="pt">PT: Sport TV</display-name></channel>
+  <channel id="sporttv2.pt"><display-name lang="pt">PT: Sport TV 2</display-name></channel>
+  <channel id="sporttv3.pt"><display-name lang="pt">PT: Sport TV 3</display-name></channel>
+  <channel id="sporttv4.pt"><display-name lang="pt">PT: Sport TV 4</display-name></channel>
+  <channel id="sporttv5.pt"><display-name lang="pt">PT: Sport TV 5</display-name></channel>
+  <channel id="sporttv6.pt"><display-name lang="pt">PT: Sport TV 6</display-name></channel>
+  <channel id="sporttv7.pt"><display-name lang="pt">PT: Sport TV 7</display-name></channel>
+  <channel id="sportv.br"><display-name lang="pt">SporTV</display-name></channel>
+  <channel id="sportv2.br"><display-name lang="pt">SporTV 2</display-name></channel>
+  <channel id="sportv3.br"><display-name lang="pt">SporTV 3</display-name></channel>
+  <channel id="sportv4.br"><display-name lang="pt">SporTV 4</display-name></channel>
+  <channel id="sportynet.br"><display-name lang="pt">SportyNet</display-name></channel>
+  <channel id="ufcfightpass.us"><display-name lang="pt">UFC Fight Pass</display-name></channel>
+  <channel id="htsport.tr"><display-name lang="pt">TR: HT Sport</display-name></channel>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amazonprime.br"><title lang="pt">Serie: The Boys</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amazonprime.br"><title lang="pt">Filme: O Senhor dos Anéis</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amazonprime.br"><title lang="pt">Filme: Top Gun: Maverick</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amazonprime.br"><title lang="pt">Filme: Duna</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amazonprime.br"><title lang="pt">Filme: Velozes e Furiosos 9</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: O Senhor dos Anéis: Os Anéis de Poder</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: A Roda do Tempo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: Reacher</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: Gen V</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: Invincible</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="at.orf.at"><title lang="pt">Austrian Skiing Championship</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="at.orf.at"><title lang="pt">Tages-Journal</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="at.orf.at"><title lang="pt">Formel 1: Großer Preis von Österreich</title></programme>
+  <programme start="20250822200000 -0300" stop="20250823000000 -0300" channel="at.orf.at"><title lang="pt">Tages-Journal</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canalgoat.br"><title lang="pt">Futebol: Campeonato Brasileiro Série B</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canalgoat.br"><title lang="pt">Debate Esportivo GOAT</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canalgoat.br"><title lang="pt">Futebol: Copa do Brasil Ao Vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canalgoat.br"><title lang="pt">Melhores Momentos do Futebol</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canalgoat.br"><title lang="pt">Futebol: Campeonato Argentino</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canalgoat2.br"><title lang="pt">Entrevistas e Análises</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Jogos Históricos</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Copa Libertadores</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Melhores Gols da Temporada</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Campeonato Europeu</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv.br"><title lang="pt">Vôlei de Praia Ao Vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv.br"><title lang="pt">Jogos da Seleção Brasileira</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv.br"><title lang="pt">Esporte Sem Fronteiras</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv.br"><title lang="pt">Futebol: Jogos Clássicos</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv.br"><title lang="pt">Cazé na Copa</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv2.br"><title lang="pt">Papo de Esporte</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv2.br"><title lang="pt">Entrevistas e Análises</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv2.br"><title lang="pt">E-Sports Ao Vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv2.br"><title lang="pt">Futebol de Base</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv2.br"><title lang="pt">Cazé no Telão</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv3.br"><title lang="pt">Basquete Internacional</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv3.br"><title lang="pt">Futebol: Gols do Mundo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv3.br"><title lang="pt">Esportes Radicais</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv3.br"><title lang="pt">Documentário Esportivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv3.br"><title lang="pt">Cazé na Web</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="combate.br"><title lang="pt">MMA Mania</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="combate.br"><title lang="pt">Boxe: Lutas Históricas</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="combate.br"><title lang="pt">UFC ao Vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="combate.br"><title lang="pt">Campeonato Mundial de Jiu-Jitsu</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="combate.br"><title lang="pt">Glory Kickboxing</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="disneyplus.br"><title lang="pt">Filme: Vingadores: Ultimato</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="disneyplus.br"><title lang="pt">Serie: The Mandalorian</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="disneyplus.br"><title lang="pt">Filme: Soul</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="disneyplus.br"><title lang="pt">Serie: Loki</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="disneyplus.br"><title lang="pt">Filme: Avatar: O Caminho da Água</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn.br"><title lang="pt">Futebol: Premier League</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn.br"><title lang="pt">Apresenta: Show do Esporte</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn.br"><title lang="pt">Apresenta: Linha de Passe</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn.br"><title lang="pt">Futebol: La Liga</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn.br"><title lang="pt">Futebol Americano: NFL</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn2.br"><title lang="pt">Basquete: NBA Ao Vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn2.br"><title lang="pt">Futebol: Melhores Momentos</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn2.br"><title lang="pt">Apresenta: SportsCenter</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn2.br"><title lang="pt">Futebol: Ligue 1</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn2.br"><title lang="pt">Futebol: Campeonato Espanhol</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn3.br"><title lang="pt">Tênis: ATP Tour</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn3.br"><title lang="pt">Futebol: Serie A Italiana</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn3.br"><title lang="pt">Esportes de Ação</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn3.br"><title lang="pt">Apresenta: ESPN W</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn3.br"><title lang="pt">Entrevistas e Análises</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn4.br"><title lang="pt">Hockey: NHL</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn4.br"><title lang="pt">Futebol: Liga dos Campeões</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn4.br"><title lang="pt">Apresenta: ESPN FC</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn4.br"><title lang="pt">Futebol: Campeonato Alemão</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn4.br"><title lang="pt">Basquete: WNBA</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn5.br"><title lang="pt">Rugby: Six Nations</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn5.br"><title lang="pt">Futebol: Copa do Mundo Feminina</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn5.br"><title lang="pt">Esportes na Neve</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn5.br"><title lang="pt">Futebol: Liga dos Campeões da Ásia</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn5.br"><title lang="pt">Apresenta: ESPN Review</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn6.br"><title lang="pt">E-Sports: Campeonato de League of Legends</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn6.br"><title lang="pt">Vôlei: FIVB World Championship</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn6.br"><title lang="pt">Apresenta: Bola da Vez</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn6.br"><title lang="pt">Futebol: Copa da Holanda</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn6.br"><title lang="pt">Futebol: Campeonato Escocês</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="fishtv.br"><title lang="pt">Pesca em Águas Claras</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="fishtv.br"><title lang="pt">Destinos de Pesca</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="fishtv.br"><title lang="pt">Pesca com Caiaque</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="fishtv.br"><title lang="pt">Aprenda a Pescar</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="fishtv.br"><title lang="pt">Pesca Noturna</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="max.br"><title lang="pt">Serie: House of the Dragon</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="max.br"><title lang="pt">Filme: Wonka</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="max.br"><title lang="pt">Serie: The Last of Us</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="max.br"><title lang="pt">Filme: Aquaman 2: O Reino Perdido</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="max.br"><title lang="pt">Serie: True Detective</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="nossofutebol.br"><title lang="pt">Futebol: Campeonato Brasileiro Série C</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="nossofutebol.br"><title lang="pt">Mesa Redonda</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="nossofutebol.br"><title lang="pt">Futebol: Jogos Históricos</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="nossofutebol.br"><title lang="pt">Gols da Rodada</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nossofutebol.br"><title lang="pt">Futebol: Copa do Nordeste</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="nsports.br"><title lang="pt">Vôlei: Superliga Ao Vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="nsports.br"><title lang="pt">Basquete: NBB Ao Vivo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="nsports.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="nsports.br"><title lang="pt">Hóquei sobre a grama</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nsports.br"><title lang="pt">Vôlei de Praia</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="polsatsport.pl"><title lang="pt">Piłka Nożna: Liga Mistrzów UEFA</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="polsatsport.pl"><title lang="pt">Liga Mistrzów Studio</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="polsatsport.pl"><title lang="pt">Piłka Nożna: Liga Europy UEFA</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="polsatsport.pl"><title lang="pt">Magazyn Sportowy</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="polsatsport.pl"><title lang="pt">Magazyn: Ligi zagraniczne</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Liga dos Campeões da Ásia</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Taça da Liga</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Bundesliga</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Premier League</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Taça de Portugal</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: Liga NOS</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: A Bola TV</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: UEFA Nations League</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: Copa do Brasil</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: Liga dos Campeões</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv.br"><title lang="pt">Vôlei: Superliga</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv.br"><title lang="pt">Basquete: NBB</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv.br"><title lang="pt">Futebol: Gols do Mundo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv.br"><title lang="pt">Futebol: Campeonato Brasileiro</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv2.br"><title lang="pt">Futebol: Copa São Paulo Júnior</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv2.br"><title lang="pt">Vôlei de Praia</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv2.br"><title lang="pt">MMA Nacional</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv2.br"><title lang="pt">Automobilismo: Stock Car</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv2.br"><title lang="pt">Futebol: Campeonato Espanhol</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv3.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv3.br"><title lang="pt">Handebol: Campeonato Mundial</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv3.br"><title lang="pt">Esportes Radicais</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv3.br"><title lang="pt">Ginástica Artística</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv3.br"><title lang="pt">Futebol: Campeonato Italiano</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv4.br"><title lang="pt">Natação: Campeonato Mundial</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv4.br"><title lang="pt">Esportes Aquáticos</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv4.br"><title lang="pt">Atletismo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv4.br"><title lang="pt">Futebol: Liga dos Campeões da Europa</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv4.br"><title lang="pt">Esporte Espetacular</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportynet.br"><title lang="pt">Futebol: Liga dos Campeões da CONCACAF</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportynet.br"><title lang="pt">Vôlei: Jogos Olímpicos</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportynet.br"><title lang="pt">Boxe: Lutas Clássicas</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportynet.br"><title lang="pt">Basquete: NBA Playoffs</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportynet.br"><title lang="pt">Melhores Gols da Temporada</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="ufcfightpass.us"><title lang="pt">UFC: Fight Night</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="ufcfightpass.us"><title lang="pt">Documentário: A Lenda do MMA</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="ufcfightpass.us"><title lang="pt">UFC: Melhores Nocautes</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="ufcfightpass.us"><title lang="pt">Dana White's Contender Series</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="ufcfightpass.us"><title lang="pt">UFC: Lutas Clássicas</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="htsport.tr"><title lang="pt">Futbol: Süper Lig</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="htsport.tr"><title lang="pt">Canlı Yayın: Basketbol</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="htsport.tr"><title lang="pt">Spor Gündemi</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="htsport.tr"><title lang="pt">Futbol: Şampiyonlar Ligi</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="htsport.tr"><title lang="pt">Spor Ekranı</title></programme>
+
+  <?xml version="1.0" encoding="UTF-8"?>
+<tv date="20250822140200 -0300" generator-info-name="Guia Gerado">
+
+  <channel id="ae.br"><display-name lang="pt">A&amp;E</display-name></channel>
+  <channel id="amc.br"><display-name lang="pt">AMC</display-name></channel>
+  <channel id="canalbrasil.br"><display-name lang="pt">Canal Brasil</display-name></channel>
+  <channel id="cinemax.br"><display-name lang="pt">Cinemax</display-name></channel>
+  <channel id="hbo.br"><display-name lang="pt">HBO</display-name></channel>
+  <channel id="hbo2.br"><display-name lang="pt">HBO 2</display-name></channel>
+  <channel id="hbofamily.br"><display-name lang="pt">HBO Family</display-name></channel>
+  <channel id="hbomundi.br"><display-name lang="pt">HBO Mundi</display-name></channel>
+  <channel id="hboplus.br"><display-name lang="pt">HBO Plus</display-name></channel>
+  <channel id="hbopop.br"><display-name lang="pt">HBO Pop</display-name></channel>
+  <channel id="hbosignature.br"><display-name lang="pt">HBO Signature</display-name></channel>
+  <channel id="hboxtreme.br"><display-name lang="pt">HBO Xtreme</display-name></channel>
+  <channel id="megapix.br"><display-name lang="pt">Megapix</display-name></channel>
+  <channel id="paramountplus.br"><display-name lang="pt">Paramount+</display-name></channel>
+  <channel id="premiere1.br"><display-name lang="pt">Premiere 1</display-name></channel>
+  <channel id="premiere2.br"><display-name lang="pt">Premiere 2</display-name></channel>
+  <channel id="premiere3.br"><display-name lang="pt">Premiere 3</display-name></channel>
+  <channel id="premiere4.br"><display-name lang="pt">Premiere 4</display-name></channel>
+  <channel id="premiere5.br"><display-name lang="pt">Premiere 5</display-name></channel>
+  <channel id="premiere6.br"><display-name lang="pt">Premiere 6</display-name></channel>
+  <channel id="premiere7.br"><display-name lang="pt">Premiere 7</display-name></channel>
+  <channel id="premiere8.br"><display-name lang="pt">Premiere 8</display-name></channel>
+  <channel id="sonychannel.br"><display-name lang="pt">Sony Channel</display-name></channel>
+  <channel id="sonymovies.br"><display-name lang="pt">Sony Movies</display-name></channel>
+  <channel id="space.br"><display-name lang="pt">Space</display-name></channel>
+  <channel id="studiouniversal.br"><display-name lang="pt">Studio Universal</display-name></channel>
+  <channel id="telecineaction.br"><display-name lang="pt">Telecine Action</display-name></channel>
+  <channel id="telecinecult.br"><display-name lang="pt">Telecine Cult</display-name></channel>
+  <channel id="telecinefun.br"><display-name lang="pt">Telecine Fun</display-name></channel>
+  <channel id="telecinepipoca.br"><display-name lang="pt">Telecine Pipoca</display-name></channel>
+  <channel id="telecinepremium.br"><display-name lang="pt">Telecine Premium</display-name></channel>
+  <channel id="telecinetouch.br"><display-name lang="pt">Telecine Touch</display-name></channel>
+  <channel id="tnt.br"><display-name lang="pt">TNT</display-name></channel>
+  <channel id="tntnovelas.br"><display-name lang="pt">TNT Novelas</display-name></channel>
+  <channel id="tntseries.br"><display-name lang="pt">TNT Series</display-name></channel>
+  <channel id="universal.br"><display-name lang="pt">Universal TV</display-name></channel>
+  <channel id="usa.br"><display-name lang="pt">USA</display-name></channel>
+  <channel id="warnerchannel.br"><display-name lang="pt">Warner Channel</display-name></channel>
+
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="ae.br"><title lang="pt">Cães de Caça</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="ae.br"><title lang="pt">Investigação Criminal</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="ae.br"><title lang="pt">Filme: O Resgate</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="ae.br"><title lang="pt">No Limite da Lei</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="ae.br"><title lang="pt">Filme: O Vingador</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="ae.br"><title lang="pt">No Limite da Lei</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amc.br"><title lang="pt">Série: Breaking Bad</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amc.br"><title lang="pt">Filme: O Poderoso Chefão</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amc.br"><title lang="pt">Série: The Walking Dead</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amc.br"><title lang="pt">Filme: Pulp Fiction</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amc.br"><title lang="pt">Filme: O Silêncio dos Inocentes</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canalbrasil.br"><title lang="pt">Filme: O Auto da Compadecida</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canalbrasil.br"><title lang="pt">Documentário: O Sal da Terra</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canalbrasil.br"><title lang="pt">Série: A Grande Família</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canalbrasil.br"><title lang="pt">Filme: Cidade de Deus</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canalbrasil.br"><title lang="pt">Filme: Tropa de Elite</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cinemax.br"><title lang="pt">Filme: O Exterminador do Futuro</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cinemax.br"><title lang="pt">Filme: Mad Max</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cinemax.br"><title lang="pt">Filme: O Iluminado</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cinemax.br"><title lang="pt">Filme: Jurassic Park</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cinemax.br"><title lang="pt">Filme: Blade Runner</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hbo.br"><title lang="pt">Filme: Duna</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbo.br"><title lang="pt">Série: A Casa do Dragão</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbo.br"><title lang="pt">Filme: Aquaman 2</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hbo.br"><title lang="pt">Série: The Last of Us</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hbo.br"><title lang="pt">Filme: Wonka</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hbo2.br"><title lang="pt">Série: True Detective</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbo2.br"><title lang="pt">Filme: Coringa</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbo2.br"><title lang="pt">Série: Euphoria</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hbo2.br"><title lang="pt">Filme: O Segredo dos Seus Olhos</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hbo2.br"><title lang="pt">Série: The White Lotus</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hbofamily.br"><title lang="pt">Filme: Como Treinar o Seu Dragão</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbofamily.br"><title lang="pt">Filme: Frozen</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbofamily.br"><title lang="pt">Filme: Shrek</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hbofamily.br"><title lang="pt">Filme: A Bela e a Fera</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hbofamily.br"><title lang="pt">Filme: Toy Story</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hbomundi.br"><title lang="pt">Filme: Parasita</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbomundi.br"><title lang="pt">Filme: La La Land</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbomundi.br"><title lang="pt">Filme: O Labirinto do Fauno</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hbomundi.br"><title lang="pt">Filme: Amélie</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hbomundi.br"><title lang="pt">Filme: Cidade de Deus</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hboplus.br"><title lang="pt">Filme: Matrix</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hboplus.br"><title lang="pt">Filme: O Cavaleiro das Trevas</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hboplus.br"><title lang="pt">Filme: Inception</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hboplus.br"><title lang="pt">Filme: Interestelar</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hboplus.br"><title lang="pt">Filme: Blade Runner 2049</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hbopop.br"><title lang="pt">Filme: A Culpa é das Estrelas</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbopop.br"><title lang="pt">Filme: La La Land</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbopop.br"><title lang="pt">Filme: Mamma Mia!</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hbopop.br"><title lang="pt">Filme: Nasce Uma Estrela</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hbopop.br"><title lang="pt">Filme: O Rei do Show</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hbosignature.br"><title lang="pt">Série: Game of Thrones</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbosignature.br"><title lang="pt">Série: Band of Brothers</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbosignature.br"><title lang="pt">Série: Chernobyl</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hbosignature.br"><title lang="pt">Série: The Sopranos</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hbosignature.br"><title lang="pt">Série: Westworld</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="hboxtreme.br"><title lang="pt">Filme: John Wick 4</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hboxtreme.br"><title lang="pt">Filme: Mad Max: Estrada da Fúria</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hboxtreme.br"><title lang="pt">Filme: O Exterminador do Futuro: Destino Sombrio</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="hboxtreme.br"><title lang="pt">Filme: Missão: Impossível - Acerto de Contas Parte 1</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="hboxtreme.br"><title lang="pt">Filme: Rambo: Até o Fim</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="megapix.br"><title lang="pt">Filme: Vingadores: Ultimato</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="megapix.br"><title lang="pt">Filme: O Poderoso Chefão</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="megapix.br"><title lang="pt">Filme: Velozes e Furiosos 9</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="megapix.br"><title lang="pt">Filme: Vingadores: Guerra Infinita</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="megapix.br"><title lang="pt">Filme: John Wick 3</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="paramountplus.br"><title lang="pt">Série: Yellowstone</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="paramountplus.br"><title lang="pt">Filme: O Poderoso Chefão: Parte III</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="paramountplus.br"><title lang="pt">Série: 1883</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="paramountplus.br"><title lang="pt">Filme: Missão: Impossível - Efeito Fallout</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="paramountplus.br"><title lang="pt">Série: The Offer</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere1.br"><title lang="pt">Futebol: Brasileirão Série A</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Campeonato Paulista</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Campeonato Carioca</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Campeonato Gaúcho</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Copa do Nordeste</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Campeonato Mineiro</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Copa Verde</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sonychannel.br"><title lang="pt">Série: The Good Doctor</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sonychannel.br"><title lang="pt">Filme: Homem-Aranha no Aranhaverso</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sonychannel.br"><title lang="pt">Série: Grey's Anatomy</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sonychannel.br"><title lang="pt">Filme: Jumanji: Bem-vindos à Selva</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sonychannel.br"><title lang="pt">Série: The Blacklist</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sonymovies.br"><title lang="pt">Filme: O Espetacular Homem-Aranha</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sonymovies.br"><title lang="pt">Filme: Ghostbusters</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sonymovies.br"><title lang="pt">Filme: O Código Da Vinci</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sonymovies.br"><title lang="pt">Filme: Um Sonho de Liberdade</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sonymovies.br"><title lang="pt">Filme: O Silêncio dos Inocentes</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="space.br"><title lang="pt">Filme: O Enigma da Outra Vida</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="space.br"><title lang="pt">Filme: Invocação do Mal</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="space.br"><title lang="pt">Filme: Halloween</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="space.br"><title lang="pt">Filme: A Freira</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="space.br"><title lang="pt">Filme: It - A Coisa</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="studiouniversal.br"><title lang="pt">Filme: Jurassic Park</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="studiouniversal.br"><title lang="pt">Filme: Mamma Mia!</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="studiouniversal.br"><title lang="pt">Filme: O Diabo Veste Prada</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="studiouniversal.br"><title lang="pt">Filme: Meu Malvado Favorito 3</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="studiouniversal.br"><title lang="pt">Filme: A Identidade Bourne</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecineaction.br"><title lang="pt">Filme: Transformers: O Último Cavaleiro</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecineaction.br"><title lang="pt">Filme: Velozes e Furiosos: Hobbs &amp; Shaw</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecineaction.br"><title lang="pt">Filme: O Resgate do Soldado Ryan</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="telecineaction.br"><title lang="pt">Filme: Missão Impossível - Protocolo Fantasma</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="telecineaction.br"><title lang="pt">Filme: 007 - Skyfall</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecinecult.br"><title lang="pt">Filme: Laranja Mecânica</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecinecult.br"><title lang="pt">Filme: O Iluminado</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecinecult.br"><title lang="pt">Filme: O Silêncio dos Inocentes</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="telecinecult.br"><title lang="pt">Filme: Clube da Luta</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="telecinecult.br"><title lang="pt">Filme: A Viagem de Chihiro</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecinefun.br"><title lang="pt">Filme: As Branquelas</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecinefun.br"><title lang="pt">Filme: De Repente 30</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecinefun.br"><title lang="pt">Filme: A Escolha Perfeita</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="telecinefun.br"><title lang="pt">Filme: O Grande Lebowski</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="telecinefun.br"><title lang="pt">Filme: A Família Addams</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecinepipoca.br"><title lang="pt">Filme: Velozes e Furiosos 10</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecinepipoca.br"><title lang="pt">Filme: Vingadores: Ultimato</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecinepipoca.br"><title lang="pt">Filme: O Senhor dos Anéis: O Retorno do Rei</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="telecinepipoca.br"><title lang="pt">Filme: Top Gun: Maverick</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="telecinepipoca.br"><title lang="pt">Filme: Doutor Estranho no Multiverso da Loucura</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecinepremium.br"><title lang="pt">Filme: Barbie</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecinepremium.br"><title lang="pt">Filme: Oppenheimer</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecinepremium.br"><title lang="pt">Filme: A Bela e a Fera</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="telecinepremium.br"><title lang="pt">Filme: O Rei Leão</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="telecinepremium.br"><title lang="pt">Filme: Aquaman</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecinetouch.br"><title lang="pt">Filme: A Escolha</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecinetouch.br"><title lang="pt">Filme: Diário de uma Paixão</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecinetouch.br"><title lang="pt">Filme: Uma Linda Mulher</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="telecinetouch.br"><title lang="pt">Filme: Titanic</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="telecinetouch.br"><title lang="pt">Filme: Simplesmente Acontece</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="tnt.br"><title lang="pt">Filme: Batman vs Superman: A Origem da Justiça</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="tnt.br"><title lang="pt">Filme: Liga da Justiça</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="tnt.br"><title lang="pt">Filme: Adão Negro</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="tnt.br"><title lang="pt">Filme: Shazam! Fúria dos Deuses</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tnt.br"><title lang="pt">Filme: Aves de Rapina</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="tntnovelas.br"><title lang="pt">Novela: Elif</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="tntnovelas.br"><title lang="pt">Novela: Amor e Traição</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="tntnovelas.br"><title lang="pt">Novela: Minha Esperança</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="tntnovelas.br"><title lang="pt">Novela: A Dona</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tntnovelas.br"><title lang="pt">Novela: A Força do Destino</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="tntseries.br"><title lang="pt">Série: The Good Doctor</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="tntseries.br"><title lang="pt">Série: Station 19</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="tntseries.br"><title lang="pt">Série: The Rookie</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="tntseries.br"><title lang="pt">Série: CSI: Vegas</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tntseries.br"><title lang="pt">Série: Chicago P.D.</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="universal.br"><title lang="pt">Série: Law &amp; Order: Special Victims Unit</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="universal.br"><title lang="pt">Série: Chicago Fire</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="universal.br"><title lang="pt">Série: The Blacklist</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="universal.br"><title lang="pt">Filme: Jurassic World</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="universal.br"><title lang="pt">Série: Chicago P.D.</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="usa.br"><title lang="pt">Série: Dr. House</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="usa.br"><title lang="pt">Série: Mr. Robot</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="usa.br"><title lang="pt">Série: A Unidade</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="usa.br"><title lang="pt">Filme: O Resgate do Soldado Ryan</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="usa.br"><title lang="pt">Série: Monk</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="warnerchannel.br"><title lang="pt">Série: The Flash</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="warnerchannel.br"><title lang="pt">Série: Riverdale</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="warnerchannel.br"><title lang="pt">Série: Supernatural</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="warnerchannel.br"><title lang="pt">Série: The Big Bang Theory</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="warnerchannel.br"><title lang="pt">Série: Friends</title></programme>
+
+</tv>
   
   <channel id="cartoonnetwork.br">
     <display-name lang="pt">Cartoon Network</display-name>
@@ -114,3 +568,4 @@
   </programme>
   
 </tv>
+
