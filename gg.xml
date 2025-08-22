@@ -1,932 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv date="20250822130000 -0300" generator-info-name="Guia Gerado">
+<tv date="20250822140200 -0300" generator-info-name="Guia Gerado">
   
-  <channel id="band.br">
-    <display-name lang="pt">Band</display-name>
-  </channel>
-  
-  <channel id="record.br">
-    <display-name lang="pt">Record TV</display-name>
-  </channel>
-
-  <channel id="recordnews.br">
-    <display-name lang="pt">Record News</display-name>
-  </channel>
-
-  <channel id="redetv.br">
-    <display-name lang="pt">RedeTV!</display-name>
-  </channel>
-  
-  <channel id="sbt.br">
-    <display-name lang="pt">SBT</display-name>
-  </channel>
-
-  <channel id="cultura.br">
-    <display-name lang="pt">TV Cultura</display-name>
-  </channel>
-
-  <channel id="globoplaynovelas.br">
-    <display-name lang="pt">Globoplay Novelas</display-name>
-  </channel>
-  
-  <channel id="globonordeste.br">
-    <display-name lang="pt">Globo Nordeste</display-name>
-  </channel>
-
-  <channel id="globorj.br">
-    <display-name lang="pt">Globo RJ</display-name>
-  </channel>
-
-  <channel id="globosp.br">
-    <display-name lang="pt">Globo SP</display-name>
-  </channel>
-
-  <channel id="ae.br">
-    <display-name lang="pt">A&E</display-name>
-  </channel>
-
-  <channel id="amc.br">
-    <display-name lang="pt">AMC</display-name>
-  </channel>
-
-  <channel id="canalbrasil.br">
-    <display-name lang="pt">Canal Brasil</display-name>
-  </channel>
-
-  <channel id="cinemax.br">
-    <display-name lang="pt">Cinemax</display-name>
-  </channel>
-
-  <channel id="hbo.br">
-    <display-name lang="pt">HBO</display-name>
-  </channel>
-
-  <channel id="hbo2.br">
-    <display-name lang="pt">HBO 2</display-name>
-  </channel>
-
-  <channel id="hbo-family.br">
-    <display-name lang="pt">HBO Family</display-name>
-  </channel>
-
-  <channel id="hbo-mundi.br">
-    <display-name lang="pt">HBO Mundi</display-name>
-  </channel>
-
-  <channel id="hbo-plus.br">
-    <display-name lang="pt">HBO Plus</display-name>
-  </channel>
-
-  <channel id="hbo-pop.br">
-    <display-name lang="pt">HBO Pop</display-name>
-  </channel>
-
-  <channel id="hbo-signature.br">
-    <display-name lang="pt">HBO Signature</display-name>
-  </channel>
-
-  <channel id="hbo-xtreme.br">
-    <display-name lang="pt">HBO Xtreme</display-name>
-  </channel>
-
-  <channel id="megapix.br">
-    <display-name lang="pt">Megapix</display-name>
-  </channel>
-
-  <channel id="paramount.br">
-    <display-name lang="pt">Paramount+</display-name>
-  </channel>
-  
-  <channel id="premiere.br">
-    <display-name lang="pt">Premiere</display-name>
-  </channel>
-  <channel id="premiere2.br">
-    <display-name lang="pt">Premiere 2</display-name>
-  </channel>
-  <channel id="premiere3.br">
-    <display-name lang="pt">Premiere 3</display-name>
-  </channel>
-  <channel id="premiere4.br">
-    <display-name lang="pt">Premiere 4</display-name>
-  </channel>
-  <channel id="premiere5.br">
-    <display-name lang="pt">Premiere 5</display-name>
-  </channel>
-  <channel id="premiere6.br">
-    <display-name lang="pt">Premiere 6</display-name>
-  </channel>
-  <channel id="premiere7.br">
-    <display-name lang="pt">Premiere 7</display-name>
-  </channel>
-  <channel id="premiere8.br">
-    <display-name lang="pt">Premiere 8</display-name>
-  </channel>
-
-  <channel id="sony.br">
-    <display-name lang="pt">Sony Channel</display-name>
-  </channel>
-
-  <channel id="sonymovies.br">
-    <display-name lang="pt">Sony Movies</display-name>
-  </channel>
-  
-  <channel id="space.br">
-    <display-name lang="pt">Space</display-name>
-  </channel>
-
-  <channel id="studiouniversal.br">
-    <display-name lang="pt">Studio Universal</display-name>
-  </channel>
-
-  <channel id="telecineaction.br">
-    <display-name lang="pt">Telecine Action</display-name>
-  </channel>
-
-  <channel id="telecinecult.br">
-    <display-name lang="pt">Telecine Cult</display-name>
-  </channel>
-
-  <channel id="telecinefun.br">
-    <display-name lang="pt">Telecine Fun</display-name>
-  </channel>
-  
-  <channel id="telecinepipoca.br">
-    <display-name lang="pt">Telecine Pipoca</display-name>
-  </channel>
-
-  <channel id="telecinepremium.br">
-    <display-name lang="pt">Telecine Premium</display-name>
-  </channel>
-
-  <channel id="telecinetouch.br">
-    <display-name lang="pt">Telecine Touch</display-name>
-  </channel>
-
-  <channel id="tnt.br">
-    <display-name lang="pt">TNT</display-name>
-  </channel>
-
-  <channel id="tntnovelas.br">
-    <display-name lang="pt">TNT Novelas</display-name>
-  </channel>
-
-  <channel id="tntseries.br">
-    <display-name lang="pt">TNT Series</display-name>
-  </channel>
-
-  <channel id="universaltv.br">
-    <display-name lang="pt">Universal TV</display-name>
-  </channel>
-
-  <channel id="usa.br">
-    <display-name lang="pt">USA</display-name>
-  </channel>
-
-  <channel id="warnerchannel.br">
-    <display-name lang="pt">Warner Channel</display-name>
-  </channel>
-
-  <channel id="primevideo.br">
-    <display-name lang="pt">Amazon Prime Video</display-name>
-  </channel>
-
-  <channel id="primevideo2.br">
-    <display-name lang="pt">Amazon Prime Video 2</display-name>
-  </channel>
-
-  <channel id="orf.at">
-    <display-name lang="pt">AT: ORF</display-name>
-  </channel>
-
-  <channel id="canalgoat.br">
-    <display-name lang="pt">Canal GOAT</display-name>
-  </channel>
-
-  <channel id="canalgoat2.br">
-    <display-name lang="pt">Canal GOAT 2</display-name>
-  </channel>
-  
-  <channel id="cazetv.br">
-    <display-name lang="pt">CazéTV</display-name>
-  </channel>
-
-  <channel id="cazetv2.br">
-    <display-name lang="pt">CazéTV 2</display-name>
-  </channel>
-
-  <channel id="cazetv3.br">
-    <display-name lang="pt">CazéTV 3</display-name>
-  </channel>
-
-  <channel id="combate.br">
-    <display-name lang="pt">Combate</display-name>
-  </channel>
-
-  <channel id="disneyplus.br">
-    <display-name lang="pt">Disney Plus</display-name>
-  </channel>
-  <channel id="disneyplus2.br">
-    <display-name lang="pt">Disney Plus 2</display-name>
-  </channel>
-  <channel id="disneyplus3.br">
-    <display-name lang="pt">Disney Plus 3</display-name>
-  </channel>
-  <channel id="disneyplus4.br">
-    <display-name lang="pt">Disney Plus 4</display-name>
-  </channel>
-
-  <channel id="espn.br">
-    <display-name lang="pt">ESPN</display-name>
-  </channel>
-  <channel id="espn2.br">
-    <display-name lang="pt">ESPN 2</display-name>
-  </channel>
-  <channel id="espn3.br">
-    <display-name lang="pt">ESPN 3</display-name>
-  </channel>
-  <channel id="espn4.br">
-    <display-name lang="pt">ESPN 4</display-name>
-  </channel>
-  <channel id="espn5.br">
-    <display-name lang="pt">ESPN 5</display-name>
-  </channel>
-  <channel id="espn6.br">
-    <display-name lang="pt">ESPN 6</display-name>
-  </channel>
-
-  <channel id="fishtv.br">
-    <display-name lang="pt">FishTV</display-name>
-  </channel>
-
-  <channel id="max.br">
-    <display-name lang="pt">Max</display-name>
-  </channel>
-
-  <channel id="nossofutebol.br">
-    <display-name lang="pt">Nosso Futebol</display-name>
-  </channel>
-
-  <channel id="nsports.br">
-    <display-name lang="pt">NSports</display-name>
-  </channel>
-
-  <channel id="polsatsport.pl">
-    <display-name lang="pt">PL: Polsat Sport Premium</display-name>
-  </channel>
-
-  <channel id="elevensports.pt">
-    <display-name lang="pt">PT: Eleven Sports</display-name>
-  </channel>
-  <channel id="elevensports2.pt">
-    <display-name lang="pt">PT: Eleven Sports 2</display-name>
-  </channel>
-  <channel id="elevensports3.pt">
-    <display-name lang="pt">PT: Eleven Sports 3</display-name>
-  </channel>
-  <channel id="elevensports5.pt">
-    <display-name lang="pt">PT: Eleven Sports 5</display-name>
-  </channel>
-  <channel id="elevensports6.pt">
-    <display-name lang="pt">PT: Eleven Sports 6</display-name>
-  </channel>
-
-  <channel id="sporttv.pt">
-    <display-name lang="pt">PT: Sport TV</display-name>
-  </channel>
-  <channel id="sporttv2.pt">
-    <display-name lang="pt">PT: Sport TV 2</display-name>
-  </channel>
-  <channel id="sporttv3.pt">
-    <display-name lang="pt">PT: Sport TV 3</display-name>
-  </channel>
-  <channel id="sporttv4.pt">
-    <display-name lang="pt">PT: Sport TV 4</display-name>
-  </channel>
-  <channel id="sporttv5.pt">
-    <display-name lang="pt">PT: Sport TV 5</display-name>
-  </channel>
-  <channel id="sporttv6.pt">
-    <display-name lang="pt">PT: Sport TV 6</display-name>
-  </channel>
-  <channel id="sporttv7.pt">
-    <display-name lang="pt">PT: Sport TV 7</display-name>
-  </channel>
-  
-  <channel id="sportv.br">
-    <display-name lang="pt">SporTV</display-name>
-  </channel>
-  <channel id="sportv2.br">
-    <display-name lang="pt">SporTV 2</display-name>
-  </channel>
-  <channel id="sportv3.br">
-    <display-name lang="pt">SporTV 3</display-name>
-  </channel>
-  <channel id="sportv4.br">
-    <display-name lang="pt">SporTV 4</display-name>
-  </channel>
-
-  <channel id="sportynet.br">
-    <display-name lang="pt">SportyNet</display-name>
-  </channel>
-
-  <channel id="ufcfightpass.br">
-    <display-name lang="pt">UFC Fight Pass</display-name>
-  </channel>
-
-  <channel id="htsport.tr">
-    <display-name lang="pt">TR: HT Sport</display-name>
-  </channel>
-
   <channel id="cartoonnetwork.br">
     <display-name lang="pt">Cartoon Network</display-name>
   </channel>
-
+  
   <channel id="cartoonito.br">
     <display-name lang="pt">Cartoonito</display-name>
   </channel>
-
+  
   <channel id="discoverykids.br">
     <display-name lang="pt">Discovery Kids</display-name>
   </channel>
-
+  
   <channel id="gloob.br">
     <display-name lang="pt">Gloob</display-name>
   </channel>
-
+  
   <channel id="gloobinho.br">
     <display-name lang="pt">Gloobinho</display-name>
   </channel>
-
+  
   <channel id="nickjr.br">
     <display-name lang="pt">Nick Jr</display-name>
   </channel>
-
+  
   <channel id="nickelodeon.br">
     <display-name lang="pt">Nickelodeon</display-name>
   </channel>
-
+  
   <channel id="tooncast.br">
     <display-name lang="pt">Tooncast</display-name>
   </channel>
 
-  <channel id="adultswim.br">
-    <display-name lang="pt">Adult Swim</display-name>
-  </channel>
-
-  <channel id="arte1.br">
-    <display-name lang="pt">Arte 1</display-name>
-  </channel>
-
-  <channel id="bis.br">
-    <display-name lang="pt">BIS</display-name>
-  </channel>
-
-  <channel id="comedycentral.br">
-    <display-name lang="pt">Comedy Central</display-name>
-  </channel>
-
-  <channel id="e.br">
-    <display-name lang="pt">E!</display-name>
-  </channel>
-
-  <channel id="foodnetwork.br">
-    <display-name lang="pt">Food Network</display-name>
-  </channel>
-
-  <channel id="hgtv.br">
-    <display-name lang="pt">HGTV</display-name>
-  </channel>
-
-  <channel id="id.br">
-    <display-name lang="pt">ID Discovery</display-name>
-  </channel>
-
-  <channel id="lifetime.br">
-    <display-name lang="pt">Lifetime</display-name>
-  </channel>
-
-  <channel id="modoviagem.br">
-    <display-name lang="pt">Modo-Viagem</display-name>
-  </channel>
-
-  <channel id="mtv.br">
-    <display-name lang="pt">MTV</display-name>
-  </channel>
-
-  <channel id="multishow.br">
-    <display-name lang="pt">Multishow</display-name>
-  </channel>
-
-  <channel id="tlc.br">
-    <display-name lang="pt">TLC</display-name>
-  </channel>
-
-  <channel id="woohoo.br">
-    <display-name lang="pt">Woohoo</display-name>
-  </channel>
-
-  <channel id="animalplanet.br">
-    <display-name lang="pt">Animal Planet</display-name>
-  </channel>
-
-  <channel id="discovery.br">
-    <display-name lang="pt">Discovery Channel</display-name>
-  </channel>
-
-  <channel id="homehealth.br">
-    <display-name lang="pt">Discovery Home &amp; Health</display-name>
-  </channel>
-
-  <channel id="discoveryscience.br">
-    <display-name lang="pt">Discovery Science</display-name>
-  </channel>
-
-  <channel id="discoverytheater.br">
-    <display-name lang="pt">Discovery Theater</display-name>
-  </channel>
-
-  <channel id="discoveryturbo.br">
-    <display-name lang="pt">Discovery Turbo</display-name>
-  </channel>
-
-  <channel id="discoveryworld.br">
-    <display-name lang="pt">Discovery World</display-name>
-  </channel>
-
-  <channel id="history.br">
-    <display-name lang="pt">History</display-name>
-  </channel>
-
-  <channel id="history2.br">
-    <display-name lang="pt">History 2</display-name>
-  </channel>
-
-  <channel id="bandnews.br">
-    <display-name lang="pt">Band News</display-name>
-  </channel>
-
-  <channel id="cnbc.br">
-    <display-name lang="pt">CNBC</display-name>
-  </channel>
-
-  <channel id="cnn.br">
-    <display-name lang="pt">CNN Brasil</display-name>
-  </channel>
-
-  <channel id="jpnews.br">
-    <display-name lang="pt">JP News</display-name>
-  </channel>
-
-  <programme start="20250822134500 -0300" stop="20250822150000 -0300" channel="band.br">
-    <title lang="pt">Melhor da Tarde</title>
-    <desc lang="pt">Variedades, notícias e entrevistas.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822165000 -0300" channel="band.br">
-    <title lang="pt">Brasil Urgente</title>
-    <desc lang="pt">Jornalismo policial com José Luiz Datena.</desc>
-  </programme>
-
-  <programme start="20250822165000 -0300" stop="20250822174500 -0300" channel="band.br">
-    <title lang="pt">Jornal da Band</title>
-    <desc lang="pt">Noticiário completo do dia.</desc>
-  </programme>
-  
-  <programme start="20250822144500 -0300" stop="20250822160000 -0300" channel="record.br">
-    <title lang="pt">Balanço Geral</title>
-    <desc lang="pt">Notícias, reportagens e prestação de serviços.</desc>
-  </programme>
-  
-  <programme start="20250822160000 -0300" stop="20250822173000 -0300" channel="record.br">
-    <title lang="pt">Novela</title>
-    <desc lang="pt">Novela bíblica em exibição.</desc>
-  </programme>
-  
-  <programme start="20250822173000 -0300" stop="20250822190000 -0300" channel="record.br">
-    <title lang="pt">Cidade Alerta</title>
-    <desc lang="pt">Jornalístico sobre criminalidade.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822140000 -0300" channel="recordnews.br">
-    <title lang="pt">Jornal Record News</title>
-    <desc lang="pt">Últimas notícias do Brasil e do mundo.</desc>
-  </programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822153000 -0300" channel="redetv.br">
-    <title lang="pt">A Tarde é Sua</title>
-    <desc lang="pt">Programa de fofocas e variedades com Sonia Abrão.</desc>
-  </programme>
-  
-  <programme start="20250822153000 -0300" stop="20250822170000 -0300" channel="redetv.br">
-    <title lang="pt">Novela</title>
-    <desc lang="pt">Novela 'O Que a Vida Me Roubou'.</desc>
-  </programme>
-  
-  <programme start="20250822170000 -0300" stop="20250822180000 -0300" channel="redetv.br">
-    <title lang="pt">TV Fama</title>
-    <desc lang="pt">Notícias sobre o mundo dos famosos.</desc>
-  </programme>
-  
-  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="sbt.br">
-    <title lang="pt">Casos de Família</title>
-    <desc lang="pt">Debate sobre problemas familiares.</desc>
-  </programme>
-
-  <programme start="20250822153000 -0300" stop="20250822164500 -0300" channel="sbt.br">
-    <title lang="pt">Novelas da Tarde</title>
-    <desc lang="pt">Novela mexicana em exibição.</desc>
-  </programme>
-
-  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="sbt.br">
-    <title lang="pt">Fofocalizando</title>
-    <desc lang="pt">Notícias sobre celebridades e fofocas.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cultura.br">
-    <title lang="pt">Quintal da Cultura</title>
-    <desc lang="pt">Entretenimento infantil.</desc>
-  </programme>
-  
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="cultura.br">
-    <title lang="pt">Jornal da Cultura</title>
-    <desc lang="pt">Análise das notícias do dia.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822143000 -0300" channel="globoplaynovelas.br">
-    <title lang="pt">Novela 1</title>
-    <desc lang="pt">O Cravo e a Rosa.</desc>
-  </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822160000 -0300" channel="globoplaynovelas.br">
-    <title lang="pt">Novela 2</title>
-    <desc lang="pt">Paraíso Tropical.</desc>
-  </programme>
-
-  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globonordeste.br">
-    <title lang="pt">Jornal Hoje</title>
-    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globonordeste.br">
-    <title lang="pt">Sessão da Tarde</title>
-    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
-  </programme>
-
-  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globonordeste.br">
-    <title lang="pt">Vale a Pena Ver de Novo</title>
-    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
-  </programme>
-
-  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globorj.br">
-    <title lang="pt">Jornal Hoje</title>
-    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globorj.br">
-    <title lang="pt">Sessão da Tarde</title>
-    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
-  </programme>
-
-  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globorj.br">
-    <title lang="pt">Vale a Pena Ver de Novo</title>
-    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
-  </programme>
-
-  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globosp.br">
-    <title lang="pt">Jornal Hoje</title>
-    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globosp.br">
-    <title lang="pt">Sessão da Tarde</title>
-    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
-  </programme>
-
-  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globosp.br">
-    <title lang="pt">Vale a Pena Ver de Novo</title>
-    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822153000 -0300" channel="ae.br">
-    <title lang="pt">Investigação Criminal</title>
-    <desc lang="pt">Documentário sobre crimes famosos.</desc>
-  </programme>
-  <programme start="20250822153000 -0300" stop="20250822170000 -0300" channel="ae.br">
-    <title lang="pt">Cidades Secretas</title>
-    <desc lang="pt">Explorando locais inusitados pelo mundo.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822150000 -0300" channel="amc.br">
-    <title lang="pt">Série: 'Breaking Bad'</title>
-    <desc lang="pt">Episódio 10, temporada 4.</desc>
-  </programme>
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="amc.br">
-    <title lang="pt">Filme: 'Pulp Fiction'</title>
-    <desc lang="pt">Um clássico do cinema independente.</desc>
-  </programme>
-  
-  <programme start="20250822133000 -0300" stop="20250822153000 -0300" channel="canalbrasil.br">
-    <title lang="pt">Sessão de Cinema Nacional</title>
-    <desc lang="pt">Filme: 'Tropa de Elite'.</desc>
-  </programme>
-  <programme start="20250822153000 -0300" stop="20250822170000 -0300" channel="canalbrasil.br">
-    <title lang="pt">Documentário</title>
-    <desc lang="pt">História do samba brasileiro.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822144500 -0300" channel="cinemax.br">
-    <title lang="pt">Filme de Ação</title>
-    <desc lang="pt">Missão Impossível.</desc>
-  </programme>
-  
-  <programme start="20250822144500 -0300" stop="20250822163000 -0300" channel="hbo.br">
-    <title lang="pt">Série: 'Euphoria'</title>
-    <desc lang="pt">Episódio inédito da nova temporada.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822143000 -0300" channel="hbo2.br">
-    <title lang="pt">Filme: 'Duna'</title>
-    <desc lang="pt">Ficção científica aclamada.</desc>
-  </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822160000 -0300" channel="hbo-family.br">
-    <title lang="pt">Filme: 'Harry Potter'</title>
-    <desc lang="pt">Aventura mágica para toda a família.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="hbo-mundi.br">
-    <title lang="pt">Filme: 'Parasita'</title>
-    <desc lang="pt">Drama sul-coreano premiado.</desc>
-  </programme>
-
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="hbo-plus.br">
-    <title lang="pt">Filme: 'Onde os Fracos Não Têm Vez'</title>
-    <desc lang="pt">Suspense dos irmãos Coen.</desc>
-  </programme>
-
-  <programme start="20250822170000 -0300" stop="20250822190000 -0300" channel="hbo-pop.br">
-    <title lang="pt">Filme: 'La La Land'</title>
-    <desc lang="pt">Musical romântico com Ryan Gosling e Emma Stone.</desc>
-  </programme>
-
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="hbo-signature.br">
-    <title lang="pt">Série: 'Chernobyl'</title>
-    <desc lang="pt">Minissérie sobre o desastre nuclear.</desc>
-  </programme>
-
-  <programme start="20250822190000 -0300" stop="20250822210000 -0300" channel="hbo-xtreme.br">
-    <title lang="pt">Filme: 'Mad Max: Estrada da Fúria'</title>
-    <desc lang="pt">Ação e adrenalina pura.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822143000 -0300" channel="megapix.br">
-    <title lang="pt">Filme: 'Velozes e Furiosos'</title>
-    <desc lang="pt">Aventura e carros de corrida.</desc>
-  </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822160000 -0300" channel="paramount.br">
-    <title lang="pt">Série: 'Yellowstone'</title>
-    <desc lang="pt">Drama sobre a família Dutton.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere.br">
-    <title lang="pt">Futebol Ao Vivo</title>
-    <desc lang="pt">Campeonato Brasileiro: Time A x Time B.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere2.br">
-    <title lang="pt">Futebol Ao Vivo 2</title>
-    <desc lang="pt">Campeonato Brasileiro: Time C x Time D.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere3.br">
-    <title lang="pt">Futebol Ao Vivo 3</title>
-    <desc lang="pt">Campeonato Brasileiro: Time E x Time F.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere4.br">
-    <title lang="pt">Futebol Ao Vivo 4</title>
-    <desc lang="pt">Campeonato Brasileiro: Time G x Time H.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere5.br">
-    <title lang="pt">Futebol Ao Vivo 5</title>
-    <desc lang="pt">Campeonato Brasileiro: Time I x Time J.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere6.br">
-    <title lang="pt">Futebol Ao Vivo 6</title>
-    <desc lang="pt">Campeonato Brasileiro: Time K x Time L.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere7.br">
-    <title lang="pt">Futebol Ao Vivo 7</title>
-    <desc lang="pt">Campeonato Brasileiro: Time M x Time N.</desc>
-  </programme>
-  
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="premiere8.br">
-    <title lang="pt">Futebol Ao Vivo 8</title>
-    <desc lang="pt">Campeonato Brasileiro: Time O x Time P.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822153000 -0300" channel="sony.br">
-    <title lang="pt">Série: 'The Good Doctor'</title>
-    <desc lang="pt">Drama médico.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sonymovies.br">
-    <title lang="pt">Filme: 'Jumanji: Bem-vindo à Selva'</title>
-    <desc lang="pt">Aventura e comédia.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="space.br">
-    <title lang="pt">Filme: 'John Wick'</title>
-    <desc lang="pt">Ação e suspense.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="studiouniversal.br">
-    <title lang="pt">Filme: 'De Volta Para o Futuro'</title>
-    <desc lang="pt">Clássico da ficção científica.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="telecineaction.br">
-    <title lang="pt">Filme: 'Vingadores: Ultimato'</title>
-    <desc lang="pt">Filme de super-herói.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="telecinecult.br">
-    <title lang="pt">Filme: 'O Poderoso Chefão'</title>
-    <desc lang="pt">Clássico do cinema mundial.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="telecinefun.br">
-    <title lang="pt">Filme: 'Esqueceram de Mim'</title>
-    <desc lang="pt">Comédia para a família.</desc>
-  </programme>
-
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="telecinepipoca.br">
-    <title lang="pt">Filme: 'Procurando Nemo'</title>
-    <desc lang="pt">Animação e aventura.</desc>
-  </programme>
-
-  <programme start="20250822170000 -0300" stop="20250822190000 -0300" channel="telecinepremium.br">
-    <title lang="pt">Filme: 'Top Gun: Maverick'</title>
-    <desc lang="pt">Filme de ação de sucesso.</desc>
-  </programme>
-
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="telecinetouch.br">
-    <title lang="pt">Filme: 'A Culpa é das Estrelas'</title>
-    <desc lang="pt">Romance e drama.</desc>
-  </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822160000 -0300" channel="tnt.br">
-    <title lang="pt">Filme: 'Matrix'</title>
-    <desc lang="pt">Ficção científica e ação.</desc>
-  </programme>
-
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="tntnovelas.br">
-    <title lang="pt">Novela: 'A Usurpadora'</title>
-    <desc lang="pt">Clássica novela mexicana.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822163000 -0300" channel="tntseries.br">
-    <title lang="pt">Série: 'The Big Bang Theory'</title>
-    <desc lang="pt">Episódio de comédia.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822163000 -0300" channel="universaltv.br">
-    <title lang="pt">Série: 'Law &amp; Order'</title>
-    <desc lang="pt">Drama criminal.</desc>
-  </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822160000 -0300" channel="usa.br">
-    <title lang="pt">Série: 'Mr. Robot'</title>
-    <desc lang="pt">Thriller psicológico.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822163000 -0300" channel="warnerchannel.br">
-    <title lang="pt">Série: 'Friends'</title>
-    <desc lang="pt">Sitcom clássica.</desc>
-  </programme>
-
-  <programme start="20250822130000 -0300" stop="20250822150000 -0300" channel="primevideo.br">
-    <title lang="pt">Filme: 'O Senhor dos Anéis'</title>
-    <desc lang="pt">Saga de fantasia.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="primevideo2.br">
-    <title lang="pt">Série: 'The Boys'</title>
-    <desc lang="pt">Série de super-heróis.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="orf.at">
-    <title lang="pt">Noticiário</title>
-    <desc lang="pt">Notícias e reportagens da Áustria.</desc>
-  </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822163000 -0300" channel="canalgoat.br">
-    <title lang="pt">Futebol Ao Vivo</title>
-    <desc lang="pt">Partida de futebol ao vivo.</desc>
-  </programme>
-
-  <programme start="20250822163000 -0300" stop="20250822180000 -0300" channel="canalgoat2.br">
-    <title lang="pt">Pré-jogo</title>
-    <desc lang="pt">Análise antes da partida.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="cazetv.br">
-    <title lang="pt">Futebol Ao Vivo</title>
-    <desc lang="pt">Partida de futebol ao vivo.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="combate.br">
-    <title lang="pt">UFC Fight Night</title>
-    <desc lang="pt">Lutas de artes marciais mistas.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn.br">
-    <title lang="pt">SportsCenter</title>
-    <desc lang="pt">Notícias esportivas.</desc>
-  </programme>
-
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn2.br">
-    <title lang="pt">Futebol Americano</title>
-    <desc lang="pt">NFL, resumo dos jogos.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="max.br">
-    <title lang="pt">Filme: 'Barbie'</title>
-    <desc lang="pt">Aventura e comédia.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="nossofutebol.br">
-    <title lang="pt">Futebol Nordestino</title>
-    <desc lang="pt">Campeonato ao vivo.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="nsports.br">
-    <title lang="pt">Vôlei Ao Vivo</title>
-    <desc lang="pt">Superliga de vôlei.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="sportv.br">
-    <title lang="pt">Futebol Ao Vivo</title>
-    <desc lang="pt">Campeonato Brasileiro.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822170000 -0300" channel="cartoonnetwork.br">
+  <programme start="20250822133000 -0300" stop="20250822143000 -0300" channel="cartoonnetwork.br">
     <title lang="pt">Jovens Titãs em Ação!</title>
-    <desc lang="pt">Desenho animado.</desc>
+    <desc lang="pt">Robin, Mutano, Ciborgue, Ravena e Estelar formam a equipe de Jovens Titãs e lutam contra o crime.</desc>
+  </programme>
+  
+  <programme start="20250822143000 -0300" stop="20250822150000 -0300" channel="cartoonnetwork.br">
+    <title lang="pt">As Meninas Superpoderosas</title>
+    <desc lang="pt">Docinho, Florzinha e Lindinha combatem os vilões de Townsville.</desc>
+  </programme>
+  
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cartoonito.br">
+    <title lang="pt">Pocoyo</title>
+    <desc lang="pt">As aventuras de Pocoyo e seus amigos Elly e Pato.</desc>
   </programme>
 
-  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="cartoonito.br">
-    <title lang="pt">O Pequeno Chef</title>
-    <desc lang="pt">Série para crianças pequenas.</desc>
+  <programme start="20250822160000 -0300" stop="20250822163000 -0300" channel="cartoonito.br">
+    <title lang="pt">A Caverna da Tina</title>
+    <desc lang="pt">Tina descobre que sua imaginação é a maior aventura de todas.</desc>
   </programme>
-
-  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="discoverykids.br">
+  
+  <programme start="20250822130000 -0300" stop="20250822140000 -0300" channel="discoverykids.br">
     <title lang="pt">Peppa Pig</title>
-    <desc lang="pt">Desenho animado educativo.</desc>
+    <desc lang="pt">Peppa Pig e sua família exploram o mundo ao seu redor.</desc>
   </programme>
 
-  <programme start="20250822150000 -0300" stop="20250822163000 -0300" channel="gloob.br">
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="discoverykids.br">
+    <title lang="pt">O Show da Luna!</title>
+    <desc lang="pt">Luna, Júpiter e Cláudio exploram o mundo da ciência.</desc>
+  </programme>
+  
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="gloob.br">
     <title lang="pt">D.P.A. - Detetives do Prédio Azul</title>
-    <desc lang="pt">Série infantil brasileira.</desc>
+    <desc lang="pt">Os detetives Bento, Sol e Pippo resolvem mistérios em seu prédio.</desc>
   </programme>
 
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="gloobinho.br">
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="gloob.br">
     <title lang="pt">Miraculous: As Aventuras de Ladybug</title>
-    <desc lang="pt">Desenho animado.</desc>
+    <desc lang="pt">Marinette e Adrien se transformam em super-heróis para salvar Paris.</desc>
+  </programme>
+  
+  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="gloobinho.br">
+    <title lang="pt">Mundo Bita</title>
+    <desc lang="pt">O Bita e sua turma cantam e aprendem sobre o mundo.</desc>
   </programme>
 
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="nickelodeon.br">
+  <programme start="20250822153000 -0300" stop="20250822163000 -0300" channel="gloobinho.br">
+    <title lang="pt">Vamos Brincar com a Laura</title>
+    <desc lang="pt">Laura convida as crianças para brincar e aprender.</desc>
+  </programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="nickjr.br">
+    <title lang="pt">Patrulha Canina</title>
+    <desc lang="pt">A equipe de filhotes de resgate mais querida de Adventure Bay.</desc>
+  </programme>
+
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="nickjr.br">
+    <title lang="pt">Dora, a Aventureira</title>
+    <desc lang="pt">Dora e o macaco Botas embarcam em aventuras e ajudam os amigos.</desc>
+  </programme>
+  
+  <programme start="20250822130000 -0300" stop="20250822140000 -0300" channel="nickelodeon.br">
     <title lang="pt">Bob Esponja</title>
-    <desc lang="pt">Desenho animado clássico.</desc>
+    <desc lang="pt">As aventuras de Bob Esponja na Fenda do Biquíni.</desc>
+  </programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="nickelodeon.br">
+    <title lang="pt">Os Padrinhos Mágicos</title>
+    <desc lang="pt">Timmy Turner ganha padrinhos mágicos para realizar seus desejos.</desc>
+  </programme>
+  
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="tooncast.br">
+    <title lang="pt">Tom e Jerry</title>
+    <desc lang="pt">As clássicas aventuras de Tom e Jerry.</desc>
   </programme>
 
-  <programme start="20250822153000 -0300" stop="20250822163000 -0300" channel="adultswim.br">
-    <title lang="pt">Rick and Morty</title>
-    <desc lang="pt">Desenho de comédia para adultos.</desc>
-  </programme>
-
-  <programme start="20250822140000 -0300" stop="20250822153000 -0300" channel="history.br">
-    <title lang="pt">O Preço da História</title>
-    <desc lang="pt">Reality show sobre antiguidades.</desc>
-  </programme>
-
-  <programme start="20250822153000 -0300" stop="20250822163000 -0300" channel="history2.br">
-    <title lang="pt">Alienígenas do Passado</title>
-    <desc lang="pt">Documentário sobre teorias da conspiração.</desc>
-  </programme>
-
-  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cnn.br">
-    <title lang="pt">Live CNN</title>
-    <desc lang="pt">Jornalismo ao vivo e debate.</desc>
-  </programme>
-
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="jpnews.br">
-    <title lang="pt">Jornal da Manhã</title>
-    <desc lang="pt">Análise de notícias com comentaristas.</desc>
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="tooncast.br">
+    <title lang="pt">Looney Tunes</title>
+    <desc lang="pt">Série de desenhos animados com Pernalonga e seus amigos.</desc>
   </programme>
   
 </tv>
