@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <tv date="20250822140200 -0300" generator-info-name="Guia Gerado">
 
@@ -8,70 +7,79 @@
   <channel id="redetv.br"><display-name lang="pt">Rede TV</display-name></channel>
   <channel id="sbt.br"><display-name lang="pt">SBT</display-name></channel>
   <channel id="tvcultura.br"><display-name lang="pt">TV Cultura</display-name></channel>
-  <channel id="globoplaynovelas.br"><display-name lang="pt">Globoplay Novelas</display-name></channel>
-  <channel id="globonordeste.br"><display-name lang="pt">Globo Nordeste</display-name></channel>
-  <channel id="globorj.br"><display-name lang="pt">Globo RJ</display-name></channel>
-  <channel id="globosp.br"><display-name lang="pt">Globo SP</display-name></channel>
+  <channel id="globoplay-novelas.br"><display-name lang="pt">Globoplay Novelas</display-name></channel>
+  <channel id="globo-nordeste.br"><display-name lang="pt">Globo Nordeste</display-name></channel>
+  <channel id="globo-rj.br"><display-name lang="pt">Globo RJ</display-name></channel>
+  <channel id="globo-sp.br"><display-name lang="pt">Globo SP</display-name></channel>
+  
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="band.br"><title lang="pt">Brasil Urgente</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="band.br"><title lang="pt">Melhor da Tarde</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="band.br"><title lang="pt">Faustão na Band</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822190000 -0300" channel="band.br"><title lang="pt">Jornal da Band</title></programme>
+  <programme start="20250822190000 -0300" stop="20250822210000 -0300" channel="band.br"><title lang="pt">The Blacklist</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="band.br"><title lang="pt">Outlander</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="band.br"><title lang="pt">MasterChef Brasil</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="band.br"><title lang="pt">Melhor da Tarde</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="band.br"><title lang="pt">Brasil Urgente</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822192000 -0300" channel="band.br"><title lang="pt">Jornal da Band</title></programme>
-  <programme start="20250822192000 -0300" stop="20250822210000 -0300" channel="band.br"><title lang="pt">Faustão na Band</title></programme>
-  <programme start="20250822210000 -0300" stop="20250823000000 -0300" channel="band.br"><title lang="pt">Cinema na Band</title></programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="record.br"><title lang="pt">Balanço Geral SP</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="record.br"><title lang="pt">Cidade Alerta</title></programme>
-  <programme start="20250822170000 -0300" stop="20250822190000 -0300" channel="record.br"><title lang="pt">Rei Davi</title></programme>
-  <programme start="20250822190000 -0300" stop="20250822200000 -0300" channel="record.br"><title lang="pt">Jornal da Record</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="record.br"><title lang="pt">A Fazenda</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="record.br"><title lang="pt">Super Tela</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="record.br"><title lang="pt">A Hora da Venenosa</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="record.br"><title lang="pt">Cidade Alerta</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="record.br"><title lang="pt">Jornal da Record</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="record.br"><title lang="pt">Novela: Gênesis</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822210000 -0300" channel="record.br"><title lang="pt">Power Couple Brasil</title></programme>
+  <programme start="20250822210000 -0300" stop="20250822220000 -0300" channel="record.br"><title lang="pt">Novela: Reis</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="record.br"><title lang="pt">Canta Comigo</title></programme>
 
   <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="recordnews.br"><title lang="pt">Jornal da Record News</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="recordnews.br"><title lang="pt">Link Record News</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="recordnews.br"><title lang="pt">Record News Repórter</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="recordnews.br"><title lang="pt">Jornal 24h</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="recordnews.br"><title lang="pt">Esporte Record News</title></programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="redetv.br"><title lang="pt">A Tarde é Sua</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="redetv.br"><title lang="pt">Alerta Nacional</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="redetv.br"><title lang="pt">Jornal da Rede TV</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="recordnews.br"><title lang="pt">Record News Brasil</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="recordnews.br"><title lang="pt">Mundo Record News</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="recordnews.br"><title lang="pt">Entrevista Record News</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="recordnews.br"><title lang="pt">Jornal 24h</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="redetv.br"><title lang="pt">A Tarde é Sua</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="redetv.br"><title lang="pt">Alerta Nacional</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="redetv.br"><title lang="pt">Jornal da Rede TV!</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="redetv.br"><title lang="pt">TV Fama</title></programme>
   <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="redetv.br"><title lang="pt">Encrenca</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="redetv.br"><title lang="pt">Filme na Rede TV</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="redetv.br"><title lang="pt">Documento Verdade</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sbt.br"><title lang="pt">Fofocalizando</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sbt.br"><title lang="pt">Novelas da Tarde</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="sbt.br"><title lang="pt">Casos de Família</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="sbt.br"><title lang="pt">Fofocalizando</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sbt.br"><title lang="pt">Novela: Cúmplices de um Resgate</title></programme>
   <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sbt.br"><title lang="pt">SBT Brasil</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sbt.br"><title lang="pt">Cozinha sob Pressão</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sbt.br"><title lang="pt">A Praça é Nossa</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sbt.br"><title lang="pt">Programa do Ratinho</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sbt.br"><title lang="pt">A Praça É Nossa</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="tvcultura.br"><title lang="pt">Jornal da Tarde</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="tvcultura.br"><title lang="pt">Cine Brasil</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="tvcultura.br"><title lang="pt">Jornal da Cultura</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="tvcultura.br"><title lang="pt">Quintal da Cultura</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="tvcultura.br"><title lang="pt">Roda Viva</title></programme>
   <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="tvcultura.br"><title lang="pt">Jornal da Cultura</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="tvcultura.br"><title lang="pt">Roda Viva</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tvcultura.br"><title lang="pt">Documentário</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="tvcultura.br"><title lang="pt">Repórter Eco</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tvcultura.br"><title lang="pt">Doc TV Cultura</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="globoplaynovelas.br"><title lang="pt">Novela: Todas as Flores</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globoplaynovelas.br"><title lang="pt">Novela: Vai na Fé</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globoplaynovelas.br"><title lang="pt">Novela: A Força do Querer</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globoplaynovelas.br"><title lang="pt">Novela: Chocolate com Pimenta</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globoplaynovelas.br"><title lang="pt">Novela: Avenida Brasil</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="globoplay-novelas.br"><title lang="pt">Novela: O Cravo e a Rosa</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globoplay-novelas.br"><title lang="pt">Novela: Senhora do Destino</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globoplay-novelas.br"><title lang="pt">Novela: A Favorita</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globoplay-novelas.br"><title lang="pt">Novela: Avenida Brasil</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globoplay-novelas.br"><title lang="pt">Novela: O Clone</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="globonordeste.br"><title lang="pt">Sessão da Tarde</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globonordeste.br"><title lang="pt">Globo Esporte Nordeste</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globonordeste.br"><title lang="pt">Praça TV 1ª Edição</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globonordeste.br"><title lang="pt">Jornal Nacional</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globonordeste.br"><title lang="pt">Programa do Jô</title></programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="globorj.br"><title lang="pt">Sessão da Tarde</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globorj.br"><title lang="pt">Globo Esporte RJ</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globorj.br"><title lang="pt">RJTV 1ª Edição</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globorj.br"><title lang="pt">Jornal Nacional</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globorj.br"><title lang="pt">Novela das 9</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="globo-nordeste.br"><title lang="pt">Jornal Nacional</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="globo-nordeste.br"><title lang="pt">Sessão da Tarde</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globo-nordeste.br"><title lang="pt">Novela: O Cravo e a Rosa</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globo-nordeste.br"><title lang="pt">Jornal Hoje</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globo-nordeste.br"><title lang="pt">Novela: Pantanal</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globo-nordeste.br"><title lang="pt">Big Brother Brasil</title></programme>
   
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="globosp.br"><title lang="pt">Sessão da Tarde</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globosp.br"><title lang="pt">Globo Esporte SP</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globosp.br"><title lang="pt">SPTV 1ª Edição</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globosp.br"><title lang="pt">Jornal Nacional</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globosp.br"><title lang="pt">Novela das 9</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="globo-rj.br"><title lang="pt">Jornal Nacional</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="globo-rj.br"><title lang="pt">Sessão da Tarde</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globo-rj.br"><title lang="pt">Novela: O Cravo e a Rosa</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globo-rj.br"><title lang="pt">Jornal Hoje</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globo-rj.br"><title lang="pt">Novela: Pantanal</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globo-rj.br"><title lang="pt">Big Brother Brasil</title></programme>
   
+  <programme start="20250822140000 -0300" stop="20250822150000 -0300" channel="globo-sp.br"><title lang="pt">Jornal Nacional</title></programme>
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="globo-sp.br"><title lang="pt">Sessão da Tarde</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="globo-sp.br"><title lang="pt">Novela: O Cravo e a Rosa</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="globo-sp.br"><title lang="pt">Jornal Hoje</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="globo-sp.br"><title lang="pt">Novela: Pantanal</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="globo-sp.br"><title lang="pt">Big Brother Brasil</title></programme>
+
 </tv>
