@@ -15,14 +15,6 @@
   <channel id="hboxtreme.br"><display-name lang="pt">HBO Xtreme</display-name></channel>
   <channel id="megapix.br"><display-name lang="pt">Megapix</display-name></channel>
   <channel id="paramountplus.br"><display-name lang="pt">Paramount+</display-name></channel>
-  <channel id="premiere1.br"><display-name lang="pt">Premiere 1</display-name></channel>
-  <channel id="premiere2.br"><display-name lang="pt">Premiere 2</display-name></channel>
-  <channel id="premiere3.br"><display-name lang="pt">Premiere 3</display-name></channel>
-  <channel id="premiere4.br"><display-name lang="pt">Premiere 4</display-name></channel>
-  <channel id="premiere5.br"><display-name lang="pt">Premiere 5</display-name></channel>
-  <channel id="premiere6.br"><display-name lang="pt">Premiere 6</display-name></channel>
-  <channel id="premiere7.br"><display-name lang="pt">Premiere 7</display-name></channel>
-  <channel id="premiere8.br"><display-name lang="pt">Premiere 8</display-name></channel>
   <channel id="sonychannel.br"><display-name lang="pt">Sony Channel</display-name></channel>
   <channel id="sonymovies.br"><display-name lang="pt">Sony Movies</display-name></channel>
   <channel id="space.br"><display-name lang="pt">Space</display-name></channel>
@@ -125,15 +117,6 @@
   <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="paramountplus.br"><title lang="pt">Filme: Missão: Impossível - Efeito Fallout</title></programme>
   <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="paramountplus.br"><title lang="pt">Série: The Offer</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere1.br"><title lang="pt">Futebol: Brasileirão Série A</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Campeonato Paulista</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Campeonato Carioca</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Campeonato Gaúcho</title></programme>
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Copa do Nordeste</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Campeonato Mineiro</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Copa Verde</title></programme>
-  
   <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sonychannel.br"><title lang="pt">Série: The Good Doctor</title></programme>
   <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sonychannel.br"><title lang="pt">Filme: Homem-Aranha no Aranhaverso</title></programme>
   <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sonychannel.br"><title lang="pt">Série: Grey's Anatomy</title></programme>
