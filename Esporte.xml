@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv date="20250822140200 -0300" generator-info-name="Guia Gerado">
 
-  <channel id="amazonprime.br"><display-name lang="pt">Amazon Prime Video</display-name></channel>
-  <channel id="amazonprime2.br"><display-name lang="pt">Amazon Prime Video 2</display-name></channel>
-  <channel id="at.orf.at"><display-name lang="pt">AT: ORF</display-name></channel>
-  <channel id="canalgoat.br"><display-name lang="pt">Canal GOAT</display-name></channel>
-  <channel id="canalgoat2.br"><display-name lang="pt">Canal GOAT 2</display-name></channel>
+  <channel id="amazon-prime-video.br"><display-name lang="pt">Amazon Prime Video</display-name></channel>
+  <channel id="amazon-prime-video-2.br"><display-name lang="pt">Amazon Prime Video 2</display-name></channel>
+  <channel id="at-orf.br"><display-name lang="pt">AT: ORF</display-name></channel>
+  <channel id="canal-goat.br"><display-name lang="pt">Canal GOAT</display-name></channel>
+  <channel id="canal-goat-2.br"><display-name lang="pt">Canal GOAT 2</display-name></channel>
   <channel id="cazetv.br"><display-name lang="pt">CazéTV</display-name></channel>
-  <channel id="cazetv2.br"><display-name lang="pt">CazéTV 2</display-name></channel>
-  <channel id="cazetv3.br"><display-name lang="pt">CazéTV 3</display-name></channel>
+  <channel id="cazetv-2.br"><display-name lang="pt">CazéTV 2</display-name></channel>
+  <channel id="cazetv-3.br"><display-name lang="pt">CazéTV 3</display-name></channel>
   <channel id="combate.br"><display-name lang="pt">Combate</display-name></channel>
-  <channel id="disneyplus.br"><display-name lang="pt">Disney Plus</display-name></channel>
+  <channel id="disney-plus.br"><display-name lang="pt">Disney Plus</display-name></channel>
+  <channel id="disney-plus-2.br"><display-name lang="pt">Disney Plus 2</display-name></channel>
+  <channel id="disney-plus-3.br"><display-name lang="pt">Disney Plus 3</display-name></channel>
+  <channel id="disney-plus-4.br"><display-name lang="pt">Disney Plus 4</display-name></channel>
   <channel id="espn.br"><display-name lang="pt">ESPN</display-name></channel>
   <channel id="espn2.br"><display-name lang="pt">ESPN 2</display-name></channel>
   <channel id="espn3.br"><display-name lang="pt">ESPN 3</display-name></channel>
@@ -19,206 +22,263 @@
   <channel id="espn6.br"><display-name lang="pt">ESPN 6</display-name></channel>
   <channel id="fishtv.br"><display-name lang="pt">FishTV</display-name></channel>
   <channel id="max.br"><display-name lang="pt">Max</display-name></channel>
-  <channel id="nossofutebol.br"><display-name lang="pt">Nosso Futebol</display-name></channel>
+  <channel id="nosso-futebol.br"><display-name lang="pt">Nosso Futebol</display-name></channel>
   <channel id="nsports.br"><display-name lang="pt">NSports</display-name></channel>
-  <channel id="polsatsport.pl"><display-name lang="pt">PL: Polsat Sport Premium</display-name></channel>
-  <channel id="elevensports.pt"><display-name lang="pt">PT: Eleven Sports</display-name></channel>
-  <channel id="elevensports2.pt"><display-name lang="pt">PT: Eleven Sports 2</display-name></channel>
-  <channel id="elevensports3.pt"><display-name lang="pt">PT: Eleven Sports 3</display-name></channel>
-  <channel id="elevensports5.pt"><display-name lang="pt">PT: Eleven Sports 5</display-name></channel>
-  <channel id="elevensports6.pt"><display-name lang="pt">PT: Eleven Sports 6</display-name></channel>
-  <channel id="sporttv.pt"><display-name lang="pt">PT: Sport TV</display-name></channel>
-  <channel id="sporttv2.pt"><display-name lang="pt">PT: Sport TV 2</display-name></channel>
-  <channel id="sporttv3.pt"><display-name lang="pt">PT: Sport TV 3</display-name></channel>
-  <channel id="sporttv4.pt"><display-name lang="pt">PT: Sport TV 4</display-name></channel>
-  <channel id="sporttv5.pt"><display-name lang="pt">PT: Sport TV 5</display-name></channel>
-  <channel id="sporttv6.pt"><display-name lang="pt">PT: Sport TV 6</display-name></channel>
-  <channel id="sporttv7.pt"><display-name lang="pt">PT: Sport TV 7</display-name></channel>
+  <channel id="premiere.br"><display-name lang="pt">Premiere</display-name></channel>
+  <channel id="premiere2.br"><display-name lang="pt">Premiere 2</display-name></channel>
+  <channel id="premiere3.br"><display-name lang="pt">Premiere 3</display-name></channel>
+  <channel id="premiere4.br"><display-name lang="pt">Premiere 4</display-name></channel>
+  <channel id="premiere5.br"><display-name lang="pt">Premiere 5</display-name></channel>
+  <channel id="premiere6.br"><display-name lang="pt">Premiere 6</display-name></channel>
+  <channel id="premiere7.br"><display-name lang="pt">Premiere 7</display-name></channel>
+  <channel id="premiere8.br"><display-name lang="pt">Premiere 8</display-name></channel>
+  <channel id="pl-polsat-sport-premium.br"><display-name lang="pt">PL: Polsat Sport Premium</display-name></channel>
+  <channel id="pt-eleven-sports.br"><display-name lang="pt">PT: Eleven Sports</display-name></channel>
+  <channel id="pt-eleven-sports-2.br"><display-name lang="pt">PT: Eleven Sports 2</display-name></channel>
+  <channel id="pt-eleven-sports-3.br"><display-name lang="pt">PT: Eleven Sports 3</display-name></channel>
+  <channel id="pt-eleven-sports-5.br"><display-name lang="pt">PT: Eleven Sports 5</display-name></channel>
+  <channel id="pt-eleven-sports-6.br"><display-name lang="pt">PT: Eleven Sports 6</display-name></channel>
+  <channel id="pt-sport-tv.br"><display-name lang="pt">PT: Sport TV</display-name></channel>
+  <channel id="pt-sport-tv-2.br"><display-name lang="pt">PT: Sport TV 2</display-name></channel>
+  <channel id="pt-sport-tv-3.br"><display-name lang="pt">PT: Sport TV 3</display-name></channel>
+  <channel id="pt-sport-tv-4.br"><display-name lang="pt">PT: Sport TV 4</display-name></channel>
+  <channel id="pt-sport-tv-5.br"><display-name lang="pt">PT: Sport TV 5</display-name></channel>
+  <channel id="pt-sport-tv-6.br"><display-name lang="pt">PT: Sport TV 6</display-name></channel>
+  <channel id="pt-sport-tv-7.br"><display-name lang="pt">PT: Sport TV 7</display-name></channel>
   <channel id="sportv.br"><display-name lang="pt">SporTV</display-name></channel>
-  <channel id="sportv2.br"><display-name lang="pt">SporTV 2</display-name></channel>
-  <channel id="sportv3.br"><display-name lang="pt">SporTV 3</display-name></channel>
-  <channel id="sportv4.br"><display-name lang="pt">SporTV 4</display-name></channel>
+  <channel id="sportv-2.br"><display-name lang="pt">SporTV 2</display-name></channel>
+  <channel id="sportv-3.br"><display-name lang="pt">SporTV 3</display-name></channel>
+  <channel id="sportv-4.br"><display-name lang="pt">SporTV 4</display-name></channel>
   <channel id="sportynet.br"><display-name lang="pt">SportyNet</display-name></channel>
-  <channel id="ufcfightpass.us"><display-name lang="pt">UFC Fight Pass</display-name></channel>
-  <channel id="htsport.tr"><display-name lang="pt">TR: HT Sport</display-name></channel>
+  <channel id="ufc-fight-pass.br"><display-name lang="pt">UFC Fight Pass</display-name></channel>
+  <channel id="tr-ht-sport.br"><display-name lang="pt">TR: HT Sport</display-name></channel>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amazonprime.br"><title lang="pt">Serie: The Boys</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amazonprime.br"><title lang="pt">Filme: O Senhor dos Anéis</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amazonprime.br"><title lang="pt">Filme: Top Gun: Maverick</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amazonprime.br"><title lang="pt">Filme: Duna</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amazonprime.br"><title lang="pt">Filme: Velozes e Furiosos 9</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amazon-prime-video.br"><title lang="pt">Futebol: Campeonato Brasileiro - Rodada do dia</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amazon-prime-video.br"><title lang="pt">Série: The Boys</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amazon-prime-video.br"><title lang="pt">Futebol: Copa do Brasil - Jogos de Hoje</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amazon-prime-video.br"><title lang="pt">Filme: O Senhor dos Anéis</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amazon-prime-video.br"><title lang="pt">Filme: O Conto da Aia</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: O Senhor dos Anéis: Os Anéis de Poder</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: A Roda do Tempo</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: Reacher</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: Gen V</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amazonprime2.br"><title lang="pt">Serie: Invincible</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="amazon-prime-video-2.br"><title lang="pt">Futebol: Copa do Brasil - Jogos de Hoje</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="amazon-prime-video-2.br"><title lang="pt">Série: Modern Love</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="amazon-prime-video-2.br"><title lang="pt">Futebol: Libertadores da América - Rodada do dia</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="amazon-prime-video-2.br"><title lang="pt">Filme: Um Lugar Silencioso</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="amazon-prime-video-2.br"><title lang="pt">Filme: O Silêncio dos Inocentes</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="at.orf.at"><title lang="pt">Austrian Skiing Championship</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="at.orf.at"><title lang="pt">Tages-Journal</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="at.orf.at"><title lang="pt">Formel 1: Großer Preis von Österreich</title></programme>
-  <programme start="20250822200000 -0300" stop="20250823000000 -0300" channel="at.orf.at"><title lang="pt">Tages-Journal</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="at-orf.br"><title lang="pt">Futebol: Liga Austríaca</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="at-orf.br"><title lang="pt">Notícias Internacionais</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="at-orf.br"><title lang="pt">Filme: O Exterminador do Futuro</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="at-orf.br"><title lang="pt">Documentário</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="at-orf.br"><title lang="pt">Futebol: Liga dos Campeões da UEFA</title></programme>
   
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canalgoat.br"><title lang="pt">Futebol: Campeonato Brasileiro Série B</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canalgoat.br"><title lang="pt">Debate Esportivo GOAT</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canalgoat.br"><title lang="pt">Futebol: Copa do Brasil Ao Vivo</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canalgoat.br"><title lang="pt">Melhores Momentos do Futebol</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canalgoat.br"><title lang="pt">Futebol: Campeonato Argentino</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canal-goat.br"><title lang="pt">Futebol: Campeonato Carioca - Jogo do dia</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canal-goat.br"><title lang="pt">Futebol: Copa do Brasil - Jogo do dia</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canal-goat.br"><title lang="pt">Futebol: Campeonato Paulista - Jogo do dia</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canal-goat.br"><title lang="pt">Futebol: Copa Libertadores</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canal-goat.br"><title lang="pt">Entrevista: Lendas do Futebol</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canalgoat2.br"><title lang="pt">Entrevistas e Análises</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Jogos Históricos</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Copa Libertadores</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Melhores Gols da Temporada</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canalgoat2.br"><title lang="pt">Futebol: Campeonato Europeu</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="canal-goat-2.br"><title lang="pt">Futebol: Campeonato Paulista - Jogo do dia</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="canal-goat-2.br"><title lang="pt">Futebol: Campeonato Carioca - Jogo do dia</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="canal-goat-2.br"><title lang="pt">Futebol: Copa do Brasil - Jogo do dia</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="canal-goat-2.br"><title lang="pt">Futebol: Campeonato Brasileiro</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="canal-goat-2.br"><title lang="pt">Futebol: Copa Libertadores</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv.br"><title lang="pt">Vôlei de Praia Ao Vivo</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv.br"><title lang="pt">Jogos da Seleção Brasileira</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv.br"><title lang="pt">Esporte Sem Fronteiras</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv.br"><title lang="pt">Futebol: Jogos Clássicos</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv.br"><title lang="pt">Cazé na Copa</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv.br"><title lang="pt">Futebol: Campeonato Carioca</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv.br"><title lang="pt">Futebol: Brasileirão - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv.br"><title lang="pt">Futebol: Campeonato Paulista - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv.br"><title lang="pt">Talk Show: Casimiro</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv2.br"><title lang="pt">Papo de Esporte</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv2.br"><title lang="pt">Entrevistas e Análises</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv2.br"><title lang="pt">E-Sports Ao Vivo</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv2.br"><title lang="pt">Futebol de Base</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv2.br"><title lang="pt">Cazé no Telão</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv3.br"><title lang="pt">Basquete Internacional</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv3.br"><title lang="pt">Futebol: Gols do Mundo</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv3.br"><title lang="pt">Esportes Radicais</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv3.br"><title lang="pt">Documentário Esportivo</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv3.br"><title lang="pt">Cazé na Web</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="combate.br"><title lang="pt">MMA Mania</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="combate.br"><title lang="pt">Boxe: Lutas Históricas</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="combate.br"><title lang="pt">UFC ao Vivo</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="combate.br"><title lang="pt">Campeonato Mundial de Jiu-Jitsu</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="combate.br"><title lang="pt">Glory Kickboxing</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv-2.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv-2.br"><title lang="pt">Futebol: Campeonato Paulista</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv-2.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv-2.br"><title lang="pt">Futebol: Brasileirão - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv-2.br"><title lang="pt">Jogos de eSports</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="disneyplus.br"><title lang="pt">Filme: Vingadores: Ultimato</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="disneyplus.br"><title lang="pt">Serie: The Mandalorian</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="disneyplus.br"><title lang="pt">Filme: Soul</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="disneyplus.br"><title lang="pt">Serie: Loki</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="disneyplus.br"><title lang="pt">Filme: Avatar: O Caminho da Água</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="cazetv-3.br"><title lang="pt">Futebol: Campeonato Gaúcho</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="cazetv-3.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="cazetv-3.br"><title lang="pt">Futebol: Campeonato Paulista - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="cazetv-3.br"><title lang="pt">Futebol: Brasileirão - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="cazetv-3.br"><title lang="pt">Documentário</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn.br"><title lang="pt">Futebol: Premier League</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn.br"><title lang="pt">Apresenta: Show do Esporte</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn.br"><title lang="pt">Apresenta: Linha de Passe</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn.br"><title lang="pt">Futebol: La Liga</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn.br"><title lang="pt">Futebol Americano: NFL</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="combate.br"><title lang="pt">Boxe: Lutas Históricas</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="combate.br"><title lang="pt">Karatê: Torneio Nacional</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="combate.br"><title lang="pt">MMA: Luta Principal</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="combate.br"><title lang="pt">UFC: Melhores Momentos</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="combate.br"><title lang="pt">Luta: Evento ao vivo</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn2.br"><title lang="pt">Basquete: NBA Ao Vivo</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn2.br"><title lang="pt">Futebol: Melhores Momentos</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn2.br"><title lang="pt">Apresenta: SportsCenter</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn2.br"><title lang="pt">Futebol: Ligue 1</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn2.br"><title lang="pt">Futebol: Campeonato Espanhol</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="disney-plus.br"><title lang="pt">Filme: Vingadores: Ultimato</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="disney-plus.br"><title lang="pt">Série: The Mandalorian</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="disney-plus.br"><title lang="pt">Filme: Guardiões da Galáxia Vol. 3</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="disney-plus.br"><title lang="pt">Série: Loki</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="disney-plus.br"><title lang="pt">Filme: Avatar: O Caminho da Água</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn3.br"><title lang="pt">Tênis: ATP Tour</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn3.br"><title lang="pt">Futebol: Serie A Italiana</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn3.br"><title lang="pt">Esportes de Ação</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn3.br"><title lang="pt">Apresenta: ESPN W</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn3.br"><title lang="pt">Entrevistas e Análises</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn.br"><title lang="pt">Tênis: US Open</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn.br"><title lang="pt">Futebol Americano: NFL</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn.br"><title lang="pt">Basquete: NBA</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn.br"><title lang="pt">Futebol: Premier League</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn.br"><title lang="pt">Esporte Total</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn4.br"><title lang="pt">Hockey: NHL</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn4.br"><title lang="pt">Futebol: Liga dos Campeões</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn4.br"><title lang="pt">Apresenta: ESPN FC</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn4.br"><title lang="pt">Futebol: Campeonato Alemão</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn4.br"><title lang="pt">Basquete: WNBA</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn5.br"><title lang="pt">Rugby: Six Nations</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn5.br"><title lang="pt">Futebol: Copa do Mundo Feminina</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn5.br"><title lang="pt">Esportes na Neve</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn5.br"><title lang="pt">Futebol: Liga dos Campeões da Ásia</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn5.br"><title lang="pt">Apresenta: ESPN Review</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn6.br"><title lang="pt">E-Sports: Campeonato de League of Legends</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn6.br"><title lang="pt">Vôlei: FIVB World Championship</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn6.br"><title lang="pt">Apresenta: Bola da Vez</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn6.br"><title lang="pt">Futebol: Copa da Holanda</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn6.br"><title lang="pt">Futebol: Campeonato Escocês</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="fishtv.br"><title lang="pt">Pesca em Águas Claras</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="fishtv.br"><title lang="pt">Destinos de Pesca</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="fishtv.br"><title lang="pt">Pesca com Caiaque</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="fishtv.br"><title lang="pt">Aprenda a Pescar</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="fishtv.br"><title lang="pt">Pesca Noturna</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="max.br"><title lang="pt">Serie: House of the Dragon</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="max.br"><title lang="pt">Filme: Wonka</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="max.br"><title lang="pt">Serie: The Last of Us</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="max.br"><title lang="pt">Filme: Aquaman 2: O Reino Perdido</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="max.br"><title lang="pt">Serie: True Detective</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="nossofutebol.br"><title lang="pt">Futebol: Campeonato Brasileiro Série C</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="nossofutebol.br"><title lang="pt">Mesa Redonda</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="nossofutebol.br"><title lang="pt">Futebol: Jogos Históricos</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="nossofutebol.br"><title lang="pt">Gols da Rodada</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nossofutebol.br"><title lang="pt">Futebol: Copa do Nordeste</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="nsports.br"><title lang="pt">Vôlei: Superliga Ao Vivo</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="nsports.br"><title lang="pt">Basquete: NBB Ao Vivo</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="nsports.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="nsports.br"><title lang="pt">Hóquei sobre a grama</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nsports.br"><title lang="pt">Vôlei de Praia</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="polsatsport.pl"><title lang="pt">Piłka Nożna: Liga Mistrzów UEFA</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="polsatsport.pl"><title lang="pt">Liga Mistrzów Studio</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="polsatsport.pl"><title lang="pt">Piłka Nożna: Liga Europy UEFA</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="polsatsport.pl"><title lang="pt">Magazyn Sportowy</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="polsatsport.pl"><title lang="pt">Magazyn: Ligi zagraniczne</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Liga dos Campeões da Ásia</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Taça da Liga</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Bundesliga</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Premier League</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="elevensports.pt"><title lang="pt">Futebol: Taça de Portugal</title></programme>
-  
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: Liga NOS</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: A Bola TV</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: UEFA Nations League</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: Copa do Brasil</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sporttv.pt"><title lang="pt">Futebol: Liga dos Campeões</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn2.br"><title lang="pt">Futebol: La Liga - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn2.br"><title lang="pt">Tênis: WTA Tour</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn2.br"><title lang="pt">Futebol: Ligue 1</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn2.br"><title lang="pt">Automobilismo: Fórmula 1</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn2.br"><title lang="pt">NFL: Jogo da Noite</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv.br"><title lang="pt">Futebol: Copa do Brasil</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv.br"><title lang="pt">Vôlei: Superliga</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv.br"><title lang="pt">Basquete: NBB</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv.br"><title lang="pt">Futebol: Gols do Mundo</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv.br"><title lang="pt">Futebol: Campeonato Brasileiro</title></programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv2.br"><title lang="pt">Futebol: Copa São Paulo Júnior</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv2.br"><title lang="pt">Vôlei de Praia</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv2.br"><title lang="pt">MMA Nacional</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv2.br"><title lang="pt">Automobilismo: Stock Car</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv2.br"><title lang="pt">Futebol: Campeonato Espanhol</title></programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv3.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv3.br"><title lang="pt">Handebol: Campeonato Mundial</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv3.br"><title lang="pt">Esportes Radicais</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv3.br"><title lang="pt">Ginástica Artística</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv3.br"><title lang="pt">Futebol: Campeonato Italiano</title></programme>
-
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv4.br"><title lang="pt">Natação: Campeonato Mundial</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv4.br"><title lang="pt">Esportes Aquáticos</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv4.br"><title lang="pt">Atletismo</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv4.br"><title lang="pt">Futebol: Liga dos Campeões da Europa</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv4.br"><title lang="pt">Esporte Espetacular</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn3.br"><title lang="pt">Futebol: Campeonato Espanhol</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn3.br"><title lang="pt">Futebol: Campeonato Italiano</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn3.br"><title lang="pt">Futebol: Campeonato Português</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn3.br"><title lang="pt">Futebol: Campeonato Francês</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn3.br"><title lang="pt">Futebol: Bundesliga</title></programme>
   
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportynet.br"><title lang="pt">Futebol: Liga dos Campeões da CONCACAF</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportynet.br"><title lang="pt">Vôlei: Jogos Olímpicos</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportynet.br"><title lang="pt">Boxe: Lutas Clássicas</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportynet.br"><title lang="pt">Basquete: NBA Playoffs</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportynet.br"><title lang="pt">Melhores Gols da Temporada</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn4.br"><title lang="pt">Futebol: La Liga - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn4.br"><title lang="pt">Futebol: Campeonato Italiano</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn4.br"><title lang="pt">Futebol: Campeonato Português</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn4.br"><title lang="pt">Futebol: Bundesliga</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn4.br"><title lang="pt">Futebol: Ligue 1</title></programme>
 
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="ufcfightpass.us"><title lang="pt">UFC: Fight Night</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="ufcfightpass.us"><title lang="pt">Documentário: A Lenda do MMA</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="ufcfightpass.us"><title lang="pt">UFC: Melhores Nocautes</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="ufcfightpass.us"><title lang="pt">Dana White's Contender Series</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="ufcfightpass.us"><title lang="pt">UFC: Lutas Clássicas</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn5.br"><title lang="pt">Futebol: La Liga - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn5.br"><title lang="pt">Futebol: Campeonato Italiano</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn5.br"><title lang="pt">Futebol: Campeonato Português</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn5.br"><title lang="pt">Futebol: Bundesliga</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn5.br"><title lang="pt">Futebol: Ligue 1</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="espn6.br"><title lang="pt">Futebol: La Liga - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="espn6.br"><title lang="pt">Futebol: Campeonato Italiano</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="espn6.br"><title lang="pt">Futebol: Campeonato Português</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="espn6.br"><title lang="pt">Futebol: Bundesliga</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="espn6.br"><title lang="pt">Futebol: Ligue 1</title></programme>
   
-  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="htsport.tr"><title lang="pt">Futbol: Süper Lig</title></programme>
-  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="htsport.tr"><title lang="pt">Canlı Yayın: Basketbol</title></programme>
-  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="htsport.tr"><title lang="pt">Spor Gündemi</title></programme>
-  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="htsport.tr"><title lang="pt">Futbol: Şampiyonlar Ligi</title></programme>
-  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="htsport.tr"><title lang="pt">Spor Ekranı</title></programme>
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="fishtv.br"><title lang="pt">Pesca Esportiva no Brasil</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="fishtv.br"><title lang="pt">Técnicas de Pesca</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="fishtv.br"><title lang="pt">Pesca Extrema</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="fishtv.br"><title lang="pt">Viagens de Pesca</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="fishtv.br"><title lang="pt">Dicas de Equipamentos</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="max.br"><title lang="pt">Filme: Barbie</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="max.br"><title lang="pt">Filme: Aquaman 2</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="max.br"><title lang="pt">Série: A Casa do Dragão</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="max.br"><title lang="pt">Série: The Last of Us</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="max.br"><title lang="pt">Série: The White Lotus</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="nosso-futebol.br"><title lang="pt">Futebol: Campeonato Cearense</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="nosso-futebol.br"><title lang="pt">Futebol: Campeonato Potiguar</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="nosso-futebol.br"><title lang="pt">Futebol: Campeonato Alagoano</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="nosso-futebol.br"><title lang="pt">Futebol: Copa do Nordeste</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nosso-futebol.br"><title lang="pt">Futebol: Campeonato Baiano</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="nsports.br"><title lang="pt">Vôlei: Superliga</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="nsports.br"><title lang="pt">Basquete: NBB</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="nsports.br"><title lang="pt">Vôlei de Praia</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="nsports.br"><title lang="pt">Futebol: Campeonato Paulista</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="nsports.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pós-Jogo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
   
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere2.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere3.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere4.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere5.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere6.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere7.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Campeonato Brasileiro - Pré-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="premiere8.br"><title lang="pt">Futebol: Campeonato Brasileiro - Jogo ao vivo</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="pl-polsat-sport-premium.br"><title lang="pl">Futebol: Ekstraklasa</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="pl-polsat-sport-premium.br"><title lang="pl">Futebol: Liga dos Campeões da UEFA</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="pl-polsat-sport-premium.br"><title lang="pl">Futebol: Premier League</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="pl-polsat-sport-premium.br"><title lang="pl">Futebol: La Liga</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="pl-polsat-sport-premium.br"><title lang="pl">Futebol: Ekstraklasa</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="pt-eleven-sports.br"><title lang="pt">Futebol: Primeira Liga Portuguesa</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="pt-eleven-sports.br"><title lang="pt">Futebol: Liga dos Campeões da UEFA</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="pt-eleven-sports.br"><title lang="pt">Futebol: Premier League</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="pt-eleven-sports.br"><title lang="pt">Futebol: Liga dos Campeões da UEFA</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="pt-eleven-sports.br"><title lang="pt">Futebol: Primeira Liga Portuguesa</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="pt-sport-tv.br"><title lang="pt">Futebol: Primeira Liga Portuguesa</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="pt-sport-tv.br"><title lang="pt">Futebol: Liga dos Campeões da UEFA</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="pt-sport-tv.br"><title lang="pt">Futebol: Taça de Portugal</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="pt-sport-tv.br"><title lang="pt">Futebol: Primeira Liga Portuguesa</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="pt-sport-tv.br"><title lang="pt">Futebol: Liga dos Campeões da UEFA</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv.br"><title lang="pt">Seleção SporTV</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv.br"><title lang="pt">Sportv News</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv.br"><title lang="pt">Futebol: Copa do Brasil - Pós-Jogo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv.br"><title lang="pt">SporTV Repórter</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv-2.br"><title lang="pt">Vôlei: Superliga</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv-2.br"><title lang="pt">Basquete: NBB</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv-2.br"><title lang="pt">Tênis: Torneio ao vivo</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv-2.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv-2.br"><title lang="pt">SporTV Vôlei</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv-3.br"><title lang="pt">Automobilismo: Stock Car</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv-3.br"><title lang="pt">Vôlei de Praia</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv-3.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv-3.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv-3.br"><title lang="pt">SporTV Esporte de Aventura</title></programme>
+  
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportv-4.br"><title lang="pt">Automobilismo: Stock Car</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportv-4.br"><title lang="pt">Vôlei de Praia</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportv-4.br"><title lang="pt">Futsal: Liga Nacional</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportv-4.br"><title lang="pt">Futebol: Copa do Brasil - Jogo ao vivo</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportv-4.br"><title lang="pt">SporTV Esporte de Aventura</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="sportynet.br"><title lang="pt">Tênis de Mesa</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="sportynet.br"><title lang="pt">E-sports</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="sportynet.br"><title lang="pt">Automobilismo: GT</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="sportynet.br"><title lang="pt">Basquete Europeu</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="sportynet.br"><title lang="pt">Futebol: Liga Italiana</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="ufc-fight-pass.br"><title lang="pt">MMA: Lutas Clássicas</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="ufc-fight-pass.br"><title lang="pt">UFC: Evento Principal</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="ufc-fight-pass.br"><title lang="pt">MMA: The Ultimate Fighter</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="ufc-fight-pass.br"><title lang="pt">UFC: Melhores Nocaute</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="ufc-fight-pass.br"><title lang="pt">UFC: Evento ao vivo</title></programme>
+
+  <programme start="20250822140000 -0300" stop="20250822160000 -0300" channel="tr-ht-sport.br"><title lang="tr">Futebol: Süper Lig</title></programme>
+  <programme start="20250822160000 -0300" stop="20250822180000 -0300" channel="tr-ht-sport.br"><title lang="tr">Basquete: BSL</title></programme>
+  <programme start="20250822180000 -0300" stop="20250822200000 -0300" channel="tr-ht-sport.br"><title lang="tr">Vôlei: Efeler Ligi</title></programme>
+  <programme start="20250822200000 -0300" stop="20250822220000 -0300" channel="tr-ht-sport.br"><title lang="tr">Futebol: Süper Lig</title></programme>
+  <programme start="20250822220000 -0300" stop="20250823000000 -0300" channel="tr-ht-sport.br"><title lang="tr">Esportes Motorizados</title></programme>
+
 </tv>
