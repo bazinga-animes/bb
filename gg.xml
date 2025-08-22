@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv date="20250822130000 -0300" generator-info-name="Guia Gerado">
   
-  <channel id="globo.br">
-    <display-name lang="pt">Globo</display-name>
-  </channel>
-
   <channel id="band.br">
     <display-name lang="pt">Band</display-name>
-  </channel>
-  
-  <channel id="sbt.br">
-    <display-name lang="pt">SBT</display-name>
   </channel>
   
   <channel id="record.br">
     <display-name lang="pt">Record TV</display-name>
   </channel>
-  
+
+  <channel id="recordnews.br">
+    <display-name lang="pt">Record News</display-name>
+  </channel>
+
   <channel id="redetv.br">
     <display-name lang="pt">RedeTV!</display-name>
   </channel>
+  
+  <channel id="sbt.br">
+    <display-name lang="pt">SBT</display-name>
+  </channel>
 
-  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globo.br">
-    <title lang="pt">Jornal Hoje</title>
-    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
-  </programme>
+  <channel id="cultura.br">
+    <display-name lang="pt">TV Cultura</display-name>
+  </channel>
 
-  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globo.br">
-    <title lang="pt">Sessão da Tarde</title>
-    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
-  </programme>
+  <channel id="globoplaynovelas.br">
+    <display-name lang="pt">Globoplay Novelas</display-name>
+  </channel>
+  
+  <channel id="globonordeste.br">
+    <display-name lang="pt">Globo Nordeste</display-name>
+  </channel>
 
-  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globo.br">
-    <title lang="pt">Vale a Pena Ver de Novo</title>
-    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
-  </programme>
+  <channel id="globorj.br">
+    <display-name lang="pt">Globo RJ</display-name>
+  </channel>
 
-  <programme start="20250822175000 -0300" stop="20250822183000 -0300" channel="globo.br">
-    <title lang="pt">Malhação</title>
-    <desc lang="pt">Novos episódios da série juvenil.</desc>
-  </programme>
+  <channel id="globosp.br">
+    <display-name lang="pt">Globo SP</display-name>
+  </channel>
   
   <programme start="20250822134500 -0300" stop="20250822150000 -0300" channel="band.br">
     <title lang="pt">Melhor da Tarde</title>
@@ -56,21 +56,6 @@
     <desc lang="pt">Noticiário completo do dia.</desc>
   </programme>
   
-  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="sbt.br">
-    <title lang="pt">Casos de Família</title>
-    <desc lang="pt">Debate sobre problemas familiares.</desc>
-  </programme>
-
-  <programme start="20250822153000 -0300" stop="20250822164500 -0300" channel="sbt.br">
-    <title lang="pt">Novelas da Tarde</title>
-    <desc lang="pt">Novela mexicana em exibição.</desc>
-  </programme>
-
-  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="sbt.br">
-    <title lang="pt">Fofocalizando</title>
-    <desc lang="pt">Notícias sobre celebridades e fofocas.</desc>
-  </programme>
-  
   <programme start="20250822144500 -0300" stop="20250822160000 -0300" channel="record.br">
     <title lang="pt">Balanço Geral</title>
     <desc lang="pt">Notícias, reportagens e prestação de serviços.</desc>
@@ -84,6 +69,11 @@
   <programme start="20250822173000 -0300" stop="20250822190000 -0300" channel="record.br">
     <title lang="pt">Cidade Alerta</title>
     <desc lang="pt">Jornalístico sobre criminalidade.</desc>
+  </programme>
+
+  <programme start="20250822130000 -0300" stop="20250822140000 -0300" channel="recordnews.br">
+    <title lang="pt">Hora News</title>
+    <desc lang="pt">Noticiário em tempo real.</desc>
   </programme>
   
   <programme start="20250822140000 -0300" stop="20250822153000 -0300" channel="redetv.br">
@@ -100,5 +90,85 @@
     <title lang="pt">TV Fama</title>
     <desc lang="pt">Notícias sobre o mundo dos famosos.</desc>
   </programme>
+  
+  <programme start="20250822143000 -0300" stop="20250822153000 -0300" channel="sbt.br">
+    <title lang="pt">Casos de Família</title>
+    <desc lang="pt">Debate sobre problemas familiares.</desc>
+  </programme>
 
+  <programme start="20250822153000 -0300" stop="20250822164500 -0300" channel="sbt.br">
+    <title lang="pt">Novelas da Tarde</title>
+    <desc lang="pt">Novela mexicana em exibição.</desc>
+  </programme>
+
+  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="sbt.br">
+    <title lang="pt">Fofocalizando</title>
+    <desc lang="pt">Notícias sobre celebridades e fofocas.</desc>
+  </programme>
+
+  <programme start="20250822150000 -0300" stop="20250822160000 -0300" channel="cultura.br">
+    <title lang="pt">Quintal da Cultura</title>
+    <desc lang="pt">Entretenimento infantil.</desc>
+  </programme>
+  
+  <programme start="20250822160000 -0300" stop="20250822170000 -0300" channel="cultura.br">
+    <title lang="pt">Jornal da Cultura</title>
+    <desc lang="pt">Análise das notícias do dia.</desc>
+  </programme>
+
+  <programme start="20250822130000 -0300" stop="20250822143000 -0300" channel="globoplaynovelas.br">
+    <title lang="pt">Novela 1</title>
+    <desc lang="pt">O Cravo e a Rosa.</desc>
+  </programme>
+
+  <programme start="20250822143000 -0300" stop="20250822160000 -0300" channel="globoplaynovelas.br">
+    <title lang="pt">Novela 2</title>
+    <desc lang="pt">Paraíso Tropical.</desc>
+  </programme>
+
+  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globonordeste.br">
+    <title lang="pt">Jornal Hoje</title>
+    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
+  </programme>
+  
+  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globonordeste.br">
+    <title lang="pt">Sessão da Tarde</title>
+    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
+  </programme>
+
+  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globonordeste.br">
+    <title lang="pt">Vale a Pena Ver de Novo</title>
+    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
+  </programme>
+
+  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globorj.br">
+    <title lang="pt">Jornal Hoje</title>
+    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
+  </programme>
+  
+  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globorj.br">
+    <title lang="pt">Sessão da Tarde</title>
+    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
+  </programme>
+
+  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globorj.br">
+    <title lang="pt">Vale a Pena Ver de Novo</title>
+    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
+  </programme>
+
+  <programme start="20250822132500 -0300" stop="20250822150000 -0300" channel="globosp.br">
+    <title lang="pt">Jornal Hoje</title>
+    <desc lang="pt">As principais notícias do Brasil e do mundo.</desc>
+  </programme>
+  
+  <programme start="20250822150000 -0300" stop="20250822164500 -0300" channel="globosp.br">
+    <title lang="pt">Sessão da Tarde</title>
+    <desc lang="pt">Filme: 'Procurando Nemo'</desc>
+  </programme>
+
+  <programme start="20250822164500 -0300" stop="20250822175000 -0300" channel="globosp.br">
+    <title lang="pt">Vale a Pena Ver de Novo</title>
+    <desc lang="pt">Novela: 'Avenida Brasil'</desc>
+  </programme>
+  
 </tv>
