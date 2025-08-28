@@ -1,1 +1,335 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Vídeo</title>
+    
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        #loader-wrapper {
+            text-align: center;
+            padding: 50px;
+            transition: opacity 0.5s ease;
+        }
+        
+        #video-container {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        #promo-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        /* BOTÃO VERMELHO */
+        .promo-button {
+            background: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .promo-button:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+        }
+        
+        .promo-button:active {
+            background: #990000;
+            transform: translateY(0);
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #ff0000;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* ===== CUSTOMIZAÇÃO DO PLYR EM VERMELHO ===== */
+        
+        /* Barra de progresso principal - VERMELHA */
+        .plyr--video .plyr__progress__buffer {
+            color: rgba(255, 0, 0, 0.3);
+        }
+        
+        .plyr--video .plyr__progress__container::-webkit-progress-value {
+            background-color: #ff0000;
+        }
+        
+        /* Barra de progresso preenchida - VERMELHA */
+        .plyr--video .plyr__progress__container::-moz-progress-bar {
+            background-color: #ff0000;
+        }
+        
+        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-webkit-progress-value {
+            background-color: #ff0000;
+        }
+        
+        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-moz-progress-bar {
+            background-color: #ff0000;
+        }
+        
+        /* Controle de volume - VERMELHO */
+        .plyr--video .plyr__volume input[type="range"] {
+            color: #ff0000;
+        }
+        
+        /* Track da barra de volume */
+        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        }
+        
+        .plyr--video .plyr__volume input[type="range"]::-moz-range-track {
+            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        }
+        
+        /* Thumb da barra de volume */
+        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-thumb {
+            background: #ff0000;
+            border: 2px solid #ffffff;
+        }
+        
+        .plyr--video .plyr__volume input[type="range"]::-moz-range-thumb {
+            background: #ff0000;
+            border: 2px solid #ffffff;
+        }
+        
+        /* Barra de volume horizontal */
+        .plyr--video .plyr__volume--horizontal .plyr__volume__display {
+            background: #ff0000;
+        }
+        
+        /* Hover nos controles */
+        .plyr--video .plyr__controls button:hover, 
+        .plyr--video .plyr__controls button:focus {
+            background: rgba(255, 0, 0, 0.1);
+        }
+        
+        /* Botão play grande */
+        .plyr--video .plyr__control--overlaid {
+            background: rgba(255, 0, 0, 0.8);
+        }
+        
+        .plyr--video .plyr__control--overlaid:hover {
+            background: rgba(255, 0, 0, 1);
+        }
+        
+        /* Menu e controles */
+        .plyr--video .plyr__menu__container .plyr__control:hover {
+            background: rgba(255, 0, 0, 0.1);
+        }
+        
+        /* Tooltips */
+        .plyr--video .plyr__tooltip {
+            background: #ff0000;
+        }
+        
+        .plyr--video .plyr__tooltip::before {
+            border-top-color: #ff0000;
+        }
+        
+        /* Time current em destaque */
+        .plyr--video .plyr__time--current {
+            color: #ff0000;
+        }
+        
+        /* ===== ESTILOS ESPECÍFICOS PARA A BARRA DE VOLUME ===== */
+        .plyr__volume[data-plyr="volume"] {
+            color: #ff0000 !important;
+        }
+        
+        .plyr__volume__display {
+            background: #ff0000 !important;
+        }
+        
+        /* Garantindo que todas as barras fiquem vermelhas */
+        .plyr--full-ui input[type="range"] {
+            color: #ff0000 !important;
+        }
+        
+        /* Progresso do buffer */
+        .plyr__progress__buffer {
+            color: rgba(255, 0, 0, 0.3) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Loader -->
+        <div id="loader-wrapper">
+            <div class="spinner"></div>
+            <div id="status-message">Preparando vídeo... 0</div>
+        </div>
+        
+        <!-- Video Container -->
+        <div id="video-container">
+            <video 
+                id="player" 
+                playsinline 
+                controls 
+                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                <!-- A fonte será adicionada via JavaScript -->
+            </video>
+        </div>
+    </div>
+
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchVideoLink();
+        });
+
+        async function fetchVideoLink() {
+            const maxAttempts = 50;
+            let attempt = 0;
+            const statusElement = document.getElementById('status-message');
+            
+            const apiUrl = `https://cdn2.my1-onifile.lol/api/api1.php?hash=97077684142325892864&url=https://www.mediafire.com/file_premium/frsfla6dgg6ohzv/diamantes-roubados-o-golpe-do-seculo-ov-1513598-DUB.mp4`;
+
+            while (attempt < maxAttempts) {
+                attempt++;
+                if (statusElement) {
+                    statusElement.textContent = `Preparando vídeo... ${attempt}`;
+                }
+
+                try {
+                    const response = await fetch(apiUrl + '&t=' + Date.now());
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+                    const mp4Link = (await response.text()).trim();
+
+                    if (!mp4Link || !isValidUrl(mp4Link)) {
+                        throw new Error('URL inválida retornada pela API');
+                    }
+
+                    if (isBlocked(mp4Link)) {
+                        showPromo();
+                        return;
+                    }
+
+                    initPlayer(mp4Link);
+                    return;
+                    
+                } catch (error) {
+                    console.error('Erro na tentativa', attempt, error);
+                    if (attempt < maxAttempts) {
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+                    }
+                }
+            }
+
+            if (statusElement) {
+                statusElement.textContent = 'Não foi possível carregar o vídeo. Recarregando...';
+            }
+            setTimeout(() => location.reload(), 3000);
+        }
+
+        function isValidUrl(string) {
+            try { 
+                new URL(string); 
+                return true; 
+            } catch (_) { 
+                return false; 
+            }
+        }
+
+        function isBlocked(url) {
+            if (!url) return false;
+            const clean = url.trim().toLowerCase();
+            return clean.includes('block.com') || 
+                   clean.includes('blocked') || 
+                   clean.includes('private');
+        }
+
+        function showPromo() {
+            const loaderWrapper = document.getElementById('loader-wrapper');
+            const videoContainer = document.getElementById('video-container');
+            const promo = document.getElementById('promo-container');
+
+            if (loaderWrapper) loaderWrapper.style.opacity = '0';
+            setTimeout(() => {
+                if (loaderWrapper) loaderWrapper.style.display = 'none';
+                if (videoContainer) videoContainer.style.display = 'none';
+                if (promo) promo.style.display = 'flex';
+            }, 350);
+        }
+
+        function initPlayer(mp4Link) {
+            const loaderWrapper = document.getElementById('loader-wrapper');
+            const videoContainer = document.getElementById('video-container');
+            const playerElement = document.getElementById('player');
+
+            while (playerElement.firstChild) {
+                playerElement.removeChild(playerElement.firstChild);
+            }
+
+            const sourceElement = document.createElement('source');
+            sourceElement.src = mp4Link;
+            sourceElement.type = 'video/mp4';
+            playerElement.appendChild(sourceElement);
+
+            if (videoContainer) videoContainer.style.display = 'block';
+
+            if (loaderWrapper) {
+                loaderWrapper.style.opacity = '0';
+                setTimeout(() => {
+                    if (loaderWrapper) loaderWrapper.style.display = 'none';
+
+                    const player = new Plyr('#player', {
+                        controls: [
+                            'play-large', 'play', 'progress', 'current-time', 
+                            'duration', 'mute', 'volume', 'captions', 
+                            'settings', 'pip', 'fullscreen'
+                        ],
+                        hideControls: true,
+                        autoplay: true
+                    });
+
+                    player.play().catch(e => {
+                        console.log('Auto-play não permitido, aguardando interação do usuário');
+                    });
+
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>
