@@ -1,37 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player de Vídeo</title>
+    <title>Player Premium - StreamBob</title>
     
     <!-- Plyr CSS -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
     
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        :root {
+            --primary-color: #ff0000;
+            --primary-hover: #cc0000;
+            --primary-active: #990000;
+            --dark-bg: #0f0f0f;
+            --darker-bg: #080808;
+            --light-text: #f5f5f5;
+            --gray-text: #aaaaaa;
+            --overlay-bg: rgba(0, 0, 0, 0.85);
+        }
+        
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: white;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            overflow-x: hidden;
+            line-height: 1.6;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--light-text);
+        }
+        
+        .logo-icon {
+            color: var(--primary-color);
+        }
+        
+        .movie-info {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--darker-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .movie-title {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: var(--light-text);
+        }
+        
+        .movie-meta {
+            display: flex;
+            gap: 15px;
+            color: var(--gray-text);
+            font-size: 14px;
         }
         
         #loader-wrapper {
             text-align: center;
-            padding: 50px;
+            padding: 60px 20px;
             transition: opacity 0.5s ease;
+            background: var(--darker-bg);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .loading-text {
+            margin-top: 20px;
+            font-size: 16px;
+            color: var(--gray-text);
         }
         
         #video-container {
             display: none;
-            margin-top: 20px;
+            margin-top: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
         
         #promo-container {
@@ -39,42 +116,67 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 50px;
+            padding: 50px 30px;
+            background: var(--darker-bg);
+            border-radius: 8px;
+            margin-top: 20px;
         }
         
-        /* BOTÃO VERMELHO */
+        .promo-icon {
+            font-size: 48px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .promo-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--light-text);
+        }
+        
+        .promo-description {
+            color: var(--gray-text);
+            max-width: 500px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        /* BOTÃO VERMELHO melhorado */
         .promo-button {
-            background: #ff0000;
+            background: var(--primary-color);
             color: white;
-            padding: 15px 30px;
+            padding: 15px 35px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 20px;
             font-weight: bold;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 14px rgba(255, 0, 0, 0.35);
         }
         
         .promo-button:hover {
-            background: #cc0000;
+            background: var(--primary-hover);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 6px 18px rgba(255, 0, 0, 0.4);
         }
         
         .promo-button:active {
-            background: #990000;
+            background: var(--primary-active);
             transform: translateY(0);
         }
         
         .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #ff0000;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid var(--primary-color);
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             animation: spin 1s linear infinite;
-            margin: 20px auto;
+            margin: 0 auto 20px;
         }
         
         @keyframes spin {
@@ -82,120 +184,122 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* ===== CUSTOMIZAÇÃO DO PLYR EM VERMELHO ===== */
-        
-        /* Barra de progresso principal - VERMELHA */
-        .plyr--video .plyr__progress__buffer {
-            color: rgba(255, 0, 0, 0.3);
+        .progress-bar {
+            width: 300px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin: 20px auto;
+            overflow: hidden;
         }
         
-        .plyr--video .plyr__progress__container::-webkit-progress-value {
-            background-color: #ff0000;
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--primary-color);
+            border-radius: 3px;
+            transition: width 0.3s ease;
         }
         
-        /* Barra de progresso preenchida - VERMELHA */
-        .plyr--video .plyr__progress__container::-moz-progress-bar {
-            background-color: #ff0000;
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: var(--gray-text);
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-webkit-progress-value {
-            background-color: #ff0000;
+        /* ===== CUSTOMIZAÇÃO AVANÇADA DO PLYR ===== */
+        .plyr {
+            --plyr-color-main: var(--primary-color);
+            --plyr-video-controls-background: rgba(0, 0, 0, 0.8);
+            --plyr-video-control-color: white;
+            --plyr-menu-background: var(--darker-bg);
+            --plyr-tooltip-background: var(--primary-color);
+            --plyr-tooltip-color: white;
+            border-radius: 8px;
         }
         
-        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-moz-progress-bar {
-            background-color: #ff0000;
+        .plyr--full-ui.plyr--video .plyr__control--overlaid {
+            background: rgba(255, 0, 0, 0.85);
+            padding: 25px;
         }
         
-        /* Controle de volume - VERMELHO */
-        .plyr--video .plyr__volume input[type="range"] {
-            color: #ff0000;
+        .plyr--full-ui.plyr--video .plyr__control--overlaid:hover {
+            background: var(--primary-color);
         }
         
-        /* Track da barra de volume */
-        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-runnable-track {
-            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        .plyr__control.plyr__control--overlaid {
+            border-radius: 50%;
         }
         
-        .plyr--video .plyr__volume input[type="range"]::-moz-range-track {
-            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        .plyr--video .plyr__controls {
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
         }
         
-        /* Thumb da barra de volume */
-        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-thumb {
-            background: #ff0000;
-            border: 2px solid #ffffff;
+        .plyr__progress__container {
+            border-radius: 5px;
         }
         
-        .plyr--video .plyr__volume input[type="range"]::-moz-range-thumb {
-            background: #ff0000;
-            border: 2px solid #ffffff;
+        .plyr__tab-focus {
+            box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3);
         }
         
-        /* Barra de volume horizontal */
-        .plyr--video .plyr__volume--horizontal .plyr__volume__display {
-            background: #ff0000;
+        /* Ajustes de responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .movie-meta {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .progress-bar {
+                width: 200px;
+            }
         }
         
-        /* Hover nos controles */
-        .plyr--video .plyr__controls button:hover, 
-        .plyr--video .plyr__controls button:focus {
-            background: rgba(255, 0, 0, 0.1);
+        /* Animações suaves para transições de tela */
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
         }
         
-        /* Botão play grande */
-        .plyr--video .plyr__control--overlaid {
-            background: rgba(255, 0, 0, 0.8);
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
-        .plyr--video .plyr__control--overlaid:hover {
-            background: rgba(255, 0, 0, 1);
+        .slide-down {
+            animation: slideDown 0.5s ease forwards;
         }
         
-        /* Menu e controles */
-        .plyr--video .plyr__menu__container .plyr__control:hover {
-            background: rgba(255, 0, 0, 0.1);
-        }
-        
-        /* Tooltips */
-        .plyr--video .plyr__tooltip {
-            background: #ff0000;
-        }
-        
-        .plyr--video .plyr__tooltip::before {
-            border-top-color: #ff0000;
-        }
-        
-        /* Time current em destaque */
-        .plyr--video .plyr__time--current {
-            color: #ff0000;
-        }
-        
-        /* ===== ESTILOS ESPECÍFICOS PARA A BARRA DE VOLUME ===== */
-        .plyr__volume[data-plyr="volume"] {
-            color: #ff0000 !important;
-        }
-        
-        .plyr__volume__display {
-            background: #ff0000 !important;
-        }
-        
-        /* Garantindo que todas as barras fiquem vermelhas */
-        .plyr--full-ui input[type="range"] {
-            color: #ff0000 !important;
-        }
-        
-        /* Progresso do buffer */
-        .plyr__progress__buffer {
-            color: rgba(255, 0, 0, 0.3) !important;
+        @keyframes slideDown {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+
+        
         <!-- Loader -->
         <div id="loader-wrapper">
             <div class="spinner"></div>
-            <div id="status-message">Preparando vídeo... 0</div>
+            <div class="loading-text">Preparando a melhor qualidade para você...</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div id="status-message">Carregando... 0%</div>
         </div>
         
         <!-- Video Container -->
@@ -208,26 +312,47 @@
                 <!-- A fonte será adicionada via JavaScript -->
             </video>
         </div>
-    </div>
+        
+
 
     <!-- Plyr JS -->
     <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Inicia a barra de progresso animada
+            animateProgressBar();
+            // Inicia a busca pelo link do vídeo
             fetchVideoLink();
         });
+
+        function animateProgressBar() {
+            const progressFill = document.getElementById('progress-fill');
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= 90) {
+                    clearInterval(interval);
+                    return;
+                }
+                width += 5;
+                progressFill.style.width = width + '%';
+            }, 800);
+        }
 
         async function fetchVideoLink() {
             const maxAttempts = 50;
             let attempt = 0;
             const statusElement = document.getElementById('status-message');
+            const progressFill = document.getElementById('progress-fill');
             
             const apiUrl = `https://cdn2.my1-onifile.lol/api/api1.php?hash=97077684142325892864&url=https://www.mediafire.com/file_premium/frsfla6dgg6ohzv/diamantes-roubados-o-golpe-do-seculo-ov-1513598-DUB.mp4`;
 
             while (attempt < maxAttempts) {
                 attempt++;
+                const progress = Math.min(90, Math.round((attempt / maxAttempts) * 90));
+                progressFill.style.width = progress + '%';
+                
                 if (statusElement) {
-                    statusElement.textContent = `Preparando vídeo... ${attempt}`;
+                    statusElement.textContent = `Preparando transmissão... ${progress}%`;
                 }
 
                 try {
@@ -245,7 +370,9 @@
                         return;
                     }
 
-                    initPlayer(mp4Link);
+                    // Completa a barra de progresso
+                    progressFill.style.width = '100%';
+                    setTimeout(() => initPlayer(mp4Link), 500);
                     return;
                     
                 } catch (error) {
@@ -284,12 +411,17 @@
             const videoContainer = document.getElementById('video-container');
             const promo = document.getElementById('promo-container');
 
-            if (loaderWrapper) loaderWrapper.style.opacity = '0';
-            setTimeout(() => {
-                if (loaderWrapper) loaderWrapper.style.display = 'none';
-                if (videoContainer) videoContainer.style.display = 'none';
-                if (promo) promo.style.display = 'flex';
-            }, 350);
+            if (loaderWrapper) {
+                loaderWrapper.style.opacity = '0';
+                setTimeout(() => {
+                    loaderWrapper.style.display = 'none';
+                    if (videoContainer) videoContainer.style.display = 'none';
+                    if (promo) {
+                        promo.style.display = 'flex';
+                        promo.classList.add('fade-in');
+                    }
+                }, 500);
+            }
         }
 
         function initPlayer(mp4Link) {
@@ -297,34 +429,60 @@
             const videoContainer = document.getElementById('video-container');
             const playerElement = document.getElementById('player');
 
+            // Limpa quaisquer sources existentes
             while (playerElement.firstChild) {
                 playerElement.removeChild(playerElement.firstChild);
             }
 
+            // Adiciona a nova source
             const sourceElement = document.createElement('source');
             sourceElement.src = mp4Link;
             sourceElement.type = 'video/mp4';
             playerElement.appendChild(sourceElement);
 
-            if (videoContainer) videoContainer.style.display = 'block';
+            if (videoContainer) {
+                videoContainer.style.display = 'block';
+                videoContainer.classList.add('slide-down');
+            }
 
             if (loaderWrapper) {
                 loaderWrapper.style.opacity = '0';
                 setTimeout(() => {
-                    if (loaderWrapper) loaderWrapper.style.display = 'none';
+                    loaderWrapper.style.display = 'none';
 
+                    // Inicializa o player Plyr
                     const player = new Plyr('#player', {
                         controls: [
-                            'play-large', 'play', 'progress', 'current-time', 
-                            'duration', 'mute', 'volume', 'captions', 
-                            'settings', 'pip', 'fullscreen'
+                            'play-large', 
+                            'play', 
+                            'progress', 
+                            'current-time', 
+                            'duration', 
+                            'mute', 
+                            'volume', 
+                            'captions', 
+                            'settings', 
+                            'pip', 
+                            'fullscreen'
                         ],
                         hideControls: true,
-                        autoplay: true
+                        autoplay: true,
+                        seekTime: 10,
+                        volume: 0.8,
+                        tooltips: {
+                            controls: true,
+                            seek: true
+                        }
                     });
 
+                    // Tenta reproduzir automaticamente
                     player.play().catch(e => {
                         console.log('Auto-play não permitido, aguardando interação do usuário');
+                    });
+
+                    // Evento quando o vídeo está pronto
+                    player.on('ready', event => {
+                        console.log('Player pronto!');
                     });
 
                 }, 500);
