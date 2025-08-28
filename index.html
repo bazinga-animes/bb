@@ -1,370 +1,334 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>EPG IPTV – Guia de Programação</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet" />
-<style>
-  /* ===== Reset e base ===== */
-  *, *::before, *::after { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background:#0b0b0f; color:#eaeaf0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif; }
-  a { color: inherit; text-decoration: none; }
-  ul { list-style: none; padding: 0; margin: 0; }
-  h1, h2, h3, h4, h5, h6 { margin:0; }
-
-  /* ===== Layout ===== */
-  .epg-wrap { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
-  .sidebar {
-    border-right: 1px solid #191a22; background: linear-gradient(180deg,#0f1016,#0b0b0f);
-    padding: 18px; position: sticky; top:0; height:100vh; overflow:auto;
-  }
-  .content { padding: 20px; }
-
-  /* ===== Header ===== */
-  .header {
-    display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px;
-  }
-  .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px; font-family: 'Poppins', sans-serif; font-size: 1.1em; }
-  .brand .dot { width:10px; height:10px; border-radius:50%; background:#e11d48; box-shadow:0 0 10px #e11d48; }
-  .clock { font-variant-numeric: tabular-nums; color:#aab0c5; font-size:14px; display: flex; align-items: center; gap: 6px;}
-
-  /* ===== Busca canais ===== */
-  .search { position: relative; margin-bottom:12px; }
-  .search input {
-    width: 100%; padding: 10px 12px 10px 40px; background:#0d0e14; border:1px solid #1d2030; color:#eaeaf0; border-radius:12px;
-  }
-  .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #aab0c5; }
-
-  /* ===== Lista de canais ===== */
-  .chan-list { display: grid; gap: 8px; }
-  .chan-item {
-    display:grid; grid-template-columns: 42px 1fr auto; align-items:center; gap:10px; padding:10px; border-radius:12px;
-    background:#0d0e14; border:1px solid #1b1e2b; cursor:pointer; transition: transform .08s ease, background .2s ease, border-color .2s ease;
-  }
-  .chan-item:hover { transform: translateY(-1px); border-color:#27314a; }
-  .chan-item.active { outline:2px solid #33406b; border-color:#33406b; background:#0d111a; }
-  .logo {
-    width:42px; height:42px; border-radius:10px; display:grid; place-items:center; background:#111524; border:1px solid #22273a; font-weight:700; color:#e2e8ff;
-  }
-  .chan-name { font-weight:600; }
-  .live-pill {
-    font-size: 12px; padding:3px 8px; border-radius:999px; background:#162025; border:1px solid #1d3642; color:#8bd6ff;
-    position: relative;
-    animation: pulse 2s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  }
-  @keyframes pulse {
-    0% { transform: scale(1); box-shadow: 0 0 0 rgba(139, 214, 255, 0.4); }
-    70% { transform: scale(1.05); box-shadow: 0 0 10px rgba(139, 214, 255, 0.8); }
-    100% { transform: scale(1); box-shadow: 0 0 0 rgba(139, 214, 255, 0.4); }
-  }
-  .live-pill:not(.is-live) { animation: none; background: #16161a; border-color: #2c2c36; color: #aab0c5; }
-
-  /* ===== Card principal ===== */
-  .card {
-    background:#0f1320; border:1px solid #1b2133; border-radius:16px; padding:18px; box-shadow: 0 10px 30px rgb(0 0 0 / .25);
-  }
-  .card + .card { margin-top:16px; }
-
-  .now-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
-  .now-title { font-size:18px; font-weight:700; }
-  .tz { font-size:12px; color:#9aa2ba; }
-
-  .row { display:grid; grid-template-columns: 130px 1fr; gap:14px; }
-  .time-col { color:#ff6b6b; font-weight:700; font-variant-numeric: tabular-nums; }
-  .title { font-weight:700; font-size:17px; }
-  .desc { color:#b8bed2; font-size:14px; line-height:1.5; margin-top:6px; }
-
-  /* ===== Barra de progresso ===== */
-  .progress { height:8px; background:#151a2a; border:1px solid #1e2740; border-radius:999px; overflow:hidden; margin-top:12px; }
-  .progress-bar { height:100%; width:0; background: linear-gradient(90deg, #e11d48, #ef4444); transition: width 1s linear; }
-
-  /* ===== Próximos ===== */
-  .upnext { display:grid; gap:12px; margin-top:14px; }
-  .up-item { display:grid; grid-template-columns: 90px 1fr; gap:10px; padding:10px; border:1px dashed #1b2133; border-radius:12px; background:#0d111a; }
-  .up-item .t { font-variant-numeric: tabular-nums; color:#a3b0ff; font-weight:700; }
-  .up-item .u-title { font-weight:600; }
-
-  /* ===== Grade compacta (opcional) ===== */
-  .grid {
-    margin-top:16px; display:grid; grid-template-columns: 140px repeat(4, 1fr); gap:8px; align-items:center;
-  }
-  .grid .g-head { color:#9aa2ba; font-size:12px; }
-  .grid .g-cell { background:#0d0f18; border:1px solid #182038; border-radius:10px; padding:10px; min-height:52px; }
-
-  /* ===== Responsivo ===== */
-  @media (max-width: 980px) {
-    .epg-wrap { grid-template-columns: 1fr; }
-    .sidebar { position: relative; height:auto; }
-    .row { grid-template-columns: 1fr; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Vídeo</title>
+    
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        #loader-wrapper {
+            text-align: center;
+            padding: 50px;
+            transition: opacity 0.5s ease;
+        }
+        
+        #video-container {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        #promo-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        /* BOTÃO VERMELHO */
+        .promo-button {
+            background: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .promo-button:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+        }
+        
+        .promo-button:active {
+            background: #990000;
+            transform: translateY(0);
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #ff0000;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* ===== CUSTOMIZAÇÃO DO PLYR EM VERMELHO ===== */
+        
+        /* Barra de progresso principal - VERMELHA */
+        .plyr--video .plyr__progress__buffer {
+            color: rgba(255, 0, 0, 0.3);
+        }
+        
+        .plyr--video .plyr__progress__container::-webkit-progress-value {
+            background-color: #ff0000;
+        }
+        
+        /* Barra de progresso preenchida - VERMELHA */
+        .plyr--video .plyr__progress__container::-moz-progress-bar {
+            background-color: #ff0000;
+        }
+        
+        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-webkit-progress-value {
+            background-color: #ff0000;
+        }
+        
+        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-moz-progress-bar {
+            background-color: #ff0000;
+        }
+        
+        /* Controle de volume - VERMELHO */
+        .plyr--video .plyr__volume input[type="range"] {
+            color: #ff0000;
+        }
+        
+        /* Track da barra de volume */
+        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        }
+        
+        .plyr--video .plyr__volume input[type="range"]::-moz-range-track {
+            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        }
+        
+        /* Thumb da barra de volume */
+        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-thumb {
+            background: #ff0000;
+            border: 2px solid #ffffff;
+        }
+        
+        .plyr--video .plyr__volume input[type="range"]::-moz-range-thumb {
+            background: #ff0000;
+            border: 2px solid #ffffff;
+        }
+        
+        /* Barra de volume horizontal */
+        .plyr--video .plyr__volume--horizontal .plyr__volume__display {
+            background: #ff0000;
+        }
+        
+        /* Hover nos controles */
+        .plyr--video .plyr__controls button:hover, 
+        .plyr--video .plyr__controls button:focus {
+            background: rgba(255, 0, 0, 0.1);
+        }
+        
+        /* Botão play grande */
+        .plyr--video .plyr__control--overlaid {
+            background: rgba(255, 0, 0, 0.8);
+        }
+        
+        .plyr--video .plyr__control--overlaid:hover {
+            background: rgba(255, 0, 0, 1);
+        }
+        
+        /* Menu e controles */
+        .plyr--video .plyr__menu__container .plyr__control:hover {
+            background: rgba(255, 0, 0, 0.1);
+        }
+        
+        /* Tooltips */
+        .plyr--video .plyr__tooltip {
+            background: #ff0000;
+        }
+        
+        .plyr--video .plyr__tooltip::before {
+            border-top-color: #ff0000;
+        }
+        
+        /* Time current em destaque */
+        .plyr--video .plyr__time--current {
+            color: #ff0000;
+        }
+        
+        /* ===== ESTILOS ESPECÍFICOS PARA A BARRA DE VOLUME ===== */
+        .plyr__volume[data-plyr="volume"] {
+            color: #ff0000 !important;
+        }
+        
+        .plyr__volume__display {
+            background: #ff0000 !important;
+        }
+        
+        /* Garantindo que todas as barras fiquem vermelhas */
+        .plyr--full-ui input[type="range"] {
+            color: #ff0000 !important;
+        }
+        
+        /* Progresso do buffer */
+        .plyr__progress__buffer {
+            color: rgba(255, 0, 0, 0.3) !important;
+        }
+    </style>
 </head>
 <body>
-  <div class="epg-wrap">
-    <aside class="sidebar">
-      <div class="header">
-        <div class="brand"><span class="dot"></span> IPTV</div>
-        <div class="clock" id="clock">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-            <path d="M2.26 10.24a6 6 0 0 1 7.29-8.48L10.53.5l3.22 3.22L11.5 6.97a7 7 0 1 0-9.24 3.27zM8 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/>
-          </svg>
-          <span id="clockText">--:--</span>
+    <div class="container">
+        <!-- Loader -->
+        <div id="loader-wrapper">
+            <div class="spinner"></div>
+            <div id="status-message">Preparando vídeo... 0</div>
         </div>
-      </div>
-      <div class="search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg>
-        <input id="search" placeholder="Buscar canal..." autocomplete="off" />
-      </div>
-      <ul id="chanList" class="chan-list"></ul>
-    </aside>
-
-    <main class="content">
-      <div class="card">
-        <div class="now-head">
-          <div class="now-title">Agora no <span id="activeChanName">—</span></div>
-          <div class="tz">Horário local • <span id="tzName">—</span></div>
+        
+        <!-- Video Container -->
+        <div id="video-container">
+            <video 
+                id="player" 
+                playsinline 
+                controls 
+                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                <!-- A fonte será adicionada via JavaScript -->
+            </video>
         </div>
-        <div class="row">
-          <div class="time-col">
-            <div><span id="nowStart">--:--</span> – <span id="nowEnd">--:--</span></div>
-            <div id="nowDur" style="color:#cbd5ff; font-weight:600; font-size:12px; margin-top:6px;">—</div>
-          </div>
-          <div>
-            <div class="title" id="nowTitle">Selecione um canal…</div>
-            <div class="desc" id="nowDesc"></div>
-            <div class="progress"><div class="progress-bar" id="nowBar"></div></div>
-          </div>
-        </div>
+    </div>
 
-        <div class="upnext" id="upnext"></div>
-      </div>
-    </main>
-  </div>
-
-  <script type="application/json" id="epg-data">
-  {
-    "timezone": "America/Fortaleza",
-    "channels": [
-      {
-        "id": "sportv",
-        "name": "SporTV",
-        "logo": "SPTV",
-        "programs": [
-          { "start": "2025-08-22T14:00:00-03:00", "end": "2025-08-22T16:00:00-03:00", "title": "Tá na Área", "desc": "Resumo e debates dos esportes do dia." },
-          { "start": "2025-08-22T16:00:00-03:00", "end": "2025-08-22T18:00:00-03:00", "title": "Jogo ao Vivo", "desc": "Campeonato Brasileiro – Pré-jogo e transmissão." },
-          { "start": "2025-08-22T18:00:00-03:00", "end": "2025-08-22T19:00:00-03:00", "title": "Troca de Passes", "desc": "Análises e entrevistas com comentaristas." },
-          { "start": "2025-08-22T19:00:00-03:00", "end": "2025-08-22T20:30:00-03:00", "title": "Seleção SporTV", "desc": "Mesa redonda sobre os destaques da rodada." },
-          { "start": "2025-08-22T23:30:00-03:00", "end": "2025-08-23T01:15:00-03:00", "title": "Linha de Passe", "desc": "Pós-jogo e mesa redonda." }
-        ]
-      },
-      {
-        "id": "espn",
-        "name": "ESPN Brasil",
-        "logo": "ESPN",
-        "programs": [
-          { "start": "2025-08-22T15:00:00-03:00", "end": "2025-08-22T16:30:00-03:00", "title": "SportsCenter", "desc": "As principais notícias do esporte." },
-          { "start": "2025-08-22T16:30:00-03:00", "end": "2025-08-22T18:30:00-03:00", "title": "Jogo da Tarde", "desc": "Transmissão ao vivo." },
-          { "start": "2025-08-22T18:30:00-03:00", "end": "2025-08-22T20:00:00-03:00", "title": "ESPN FC", "desc": "Debates sobre futebol internacional." }
-        ]
-      },
-      {
-        "id": "premiere",
-        "name": "Premiere",
-        "logo": "PREM",
-        "programs": [
-          { "start": "2025-08-22T13:30:00-03:00", "end": "2025-08-22T15:30:00-03:00", "title": "Compactos Brasileirão", "desc": "Melhores momentos da rodada." },
-          { "start": "2025-08-22T15:30:00-03:00", "end": "2025-08-22T17:30:00-03:00", "title": "Jogo ao Vivo", "desc": "Série A – Transmissão." },
-          { "start": "2025-08-22T17:30:00-03:00", "end": "2025-08-22T19:00:00-03:00", "title": "Pós-Jogo", "desc": "Análises e entrevistas." }
-        ]
-      }
-    ]
-  }
-  </script>
-
-  <script>
-  // ===== Utilitários de data/tempo =====
-  const pad2 = n => String(n).padStart(2, '0');
-  const fmtHM = d => `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
-  
-  function parseISOWithTZ(s) {
-    return new Date(s);
-  }
-
-  function durationStr(ms) {
-    const m = Math.max(0, Math.round(ms / 60000));
-    const h = Math.floor(m / 60), mm = m % 60;
-    if (m === 0) return 'Menos de 1min';
-    return h ? `${h}h ${pad2(mm)}min` : `${mm}min`;
-  }
-
-  function clamp01(x){ return Math.max(0, Math.min(1, x)); }
-  
-  // ===== Carregar dados e montar UI =====
-  const raw = document.getElementById('epg-data').textContent;
-  const EPG = JSON.parse(raw);
-
-  const tzFormatter = new Intl.DateTimeFormat('pt-BR', { timeZone: EPG.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone, timeStyle:'short', dateStyle:'medium' });
-  document.getElementById('tzName').textContent = (EPG.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone).split('/').pop().replace(/_/g, ' ');
-
-  function tickClock(){
-    const now = new Date();
-    document.getElementById('clockText').textContent = new Intl.DateTimeFormat('pt-BR', { timeStyle:'short' }).format(now);
-  }
-  setInterval(tickClock, 1000); tickClock();
-
-  const chanListEl = document.getElementById('chanList');
-  let activeId = EPG.channels[0]?.id;
-
-  // Debounce para a busca
-  const debounce = (func, delay = 300) => {
-    let timeout;
-    return (...args) => {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => func.apply(this, args), delay);
-    };
-  };
-
-  function renderChanList(filter = ''){
-    chanListEl.innerHTML = '';
-    const q = filter.trim().toLowerCase();
-    EPG.channels
-      .filter(c => c.name.toLowerCase().includes(q) || c.id.toLowerCase().includes(q))
-      .forEach(c => {
-        const li = document.createElement('li');
-        li.className = 'chan-item' + (c.id === activeId ? ' active' : '');
-        li.dataset.id = c.id;
-        li.innerHTML = `
-          <div class="logo">${(c.logo||c.name||'?').toString().slice(0,5)}</div>
-          <div class="chan-name">${c.name}</div>
-          <div class="live-pill" data-pill>—</div>
-        `;
-        li.addEventListener('click', () => { 
-          activeId = c.id; 
-          document.querySelectorAll('.chan-item').forEach(e=>e.classList.remove('active')); 
-          li.classList.add('active'); 
-          renderActive(); 
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchVideoLink();
         });
-        chanListEl.appendChild(li);
-      });
-      updateLivePills();
-  }
 
-  renderChanList();
-  document.getElementById('search').addEventListener('input', debounce(e => renderChanList(e.target.value)));
+        async function fetchVideoLink() {
+            const maxAttempts = 50;
+            let attempt = 0;
+            const statusElement = document.getElementById('status-message');
+            
+            const apiUrl = `https://cdn2.my1-onifile.lol/api/api1.php?hash=97077684142325892864&url=https://www.mediafire.com/file_premium/frsfla6dgg6ohzv/diamantes-roubados-o-golpe-do-seculo-ov-1513598-DUB.mp4`;
 
-  function getNowNext(programs, now = new Date()){
-    const list = [...programs].sort((a,b)=> new Date(a.start) - new Date(b.start));
-    const norm = list.map(p => {
-      const s = parseISOWithTZ(p.start); const e = parseISOWithTZ(p.end);
-      if (e <= s) e.setDate(e.getDate() + 1);
-      return { ...p, _s: s, _e: e };
-    });
+            while (attempt < maxAttempts) {
+                attempt++;
+                if (statusElement) {
+                    statusElement.textContent = `Preparando vídeo... ${attempt}`;
+                }
 
-    let nowProg = null, idxNow = -1;
-    for (let i=0;i<norm.length;i++){
-      const p = norm[i];
-      if (now >= p._s && now < p._e) { nowProg = p; idxNow = i; break; }
-    }
+                try {
+                    const response = await fetch(apiUrl + '&t=' + Date.now());
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
-    if (!nowProg){
-      for (let i=0;i<norm.length;i++) { if (norm[i]._s > now) { idxNow = i; break; } }
-    }
+                    const mp4Link = (await response.text()).trim();
 
-    const view = [];
-    for (let k = Math.max(0, idxNow); k < Math.min(norm.length, idxNow + 5); k++) {
-      if(k === idxNow && nowProg && (nowProg.title === norm[k].title)){
-         view.push(nowProg);
-      } else {
-         view.push(norm[k]);
-      }
-    }
-    return { nowProg, view };
-  }
+                    if (!mp4Link || !isValidUrl(mp4Link)) {
+                        throw new Error('URL inválida retornada pela API');
+                    }
 
-  const nowStartEl = document.getElementById('nowStart');
-  const nowEndEl = document.getElementById('nowEnd');
-  const nowDurEl = document.getElementById('nowDur');
-  const nowTitleEl = document.getElementById('nowTitle');
-  const nowDescEl = document.getElementById('nowDesc');
-  const nowBarEl = document.getElementById('nowBar');
-  const upnextEl = document.getElementById('upnext');
-  const chanNameEl = document.getElementById('activeChanName');
+                    if (isBlocked(mp4Link)) {
+                        showPromo();
+                        return;
+                    }
 
-  function renderActive(){
-    const chan = EPG.channels.find(c => c.id === activeId);
-    if (!chan) return;
-    chanNameEl.textContent = chan.name;
+                    initPlayer(mp4Link);
+                    return;
+                    
+                } catch (error) {
+                    console.error('Erro na tentativa', attempt, error);
+                    if (attempt < maxAttempts) {
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+                    }
+                }
+            }
 
-    const { nowProg, view } = getNowNext(chan.programs, new Date());
+            if (statusElement) {
+                statusElement.textContent = 'Não foi possível carregar o vídeo. Recarregando...';
+            }
+            setTimeout(() => location.reload(), 3000);
+        }
 
-    if (nowProg){
-      const s = parseISOWithTZ(nowProg.start); const e = parseISOWithTZ(nowProg.end);
-      const total = e - s; const past = new Date() - s; const pct = clamp01(past/total);
-      nowStartEl.textContent = fmtHM(s); nowEndEl.textContent = fmtHM(e); nowDurEl.textContent = `${durationStr(total)} • ${Math.round(pct*100)}%`;
-      nowTitleEl.textContent = nowProg.title || '—';
-      nowDescEl.textContent = nowProg.desc || '';
-      nowBarEl.style.width = (pct*100).toFixed(1) + '%';
-    } else {
-      nowStartEl.textContent = '--:--'; nowEndEl.textContent = '--:--'; nowDurEl.textContent = '—';
-      nowTitleEl.textContent = 'Sem programação ao vivo no momento';
-      nowDescEl.textContent = 'Volte em instantes.';
-      nowBarEl.style.width = '0%';
-    }
+        function isValidUrl(string) {
+            try { 
+                new URL(string); 
+                return true; 
+            } catch (_) { 
+                return false; 
+            }
+        }
 
-    upnextEl.innerHTML = '';
-    const upcoming = view.filter(p => nowProg ? p.start !== nowProg.start : true);
-    
-    // Mostra apenas os próximos programas, se houver
-    if (upcoming.length > 0) {
-      upcoming.forEach(p => {
-        const s = parseISOWithTZ(p.start); const e = parseISOWithTZ(p.end);
-        const item = document.createElement('div'); item.className = 'up-item';
-        item.innerHTML = `
-          <div class="t">${fmtHM(s)}–${fmtHM(e)}</div>
-          <div>
-            <div class="u-title">${p.title || '—'}</div>
-            <div class="desc" style="margin-top:4px;">${p.desc || ''}</div>
-          </div>`;
-        upnextEl.appendChild(item);
-      });
-    } else if (nowProg) {
-      // Mensagem caso não haja próximos programas após o atual
-      const msg = document.createElement('div');
-      msg.textContent = 'Fim da programação do dia.';
-      msg.style.color = '#9aa2ba';
-      msg.style.padding = '10px';
-      upnextEl.appendChild(msg);
-    }
+        function isBlocked(url) {
+            if (!url) return false;
+            const clean = url.trim().toLowerCase();
+            return clean.includes('block.com') || 
+                   clean.includes('blocked') || 
+                   clean.includes('private');
+        }
 
-    updateLivePills();
-  }
+        function showPromo() {
+            const loaderWrapper = document.getElementById('loader-wrapper');
+            const videoContainer = document.getElementById('video-container');
+            const promo = document.getElementById('promo-container');
 
-  function updateLivePills() {
-    document.querySelectorAll('.chan-item').forEach(li => {
-      const id = li.dataset.id; 
-      const c = EPG.channels.find(x => x.id === id);
-      if (!c) return; 
-      const cur = getNowNext(c.programs).nowProg;
-      const pill = li.querySelector('[data-pill]');
-      if (cur) {
-        pill.textContent = 'AO VIVO';
-        pill.classList.add('is-live');
-      } else {
-        pill.textContent = '—';
-        pill.classList.remove('is-live');
-      }
-    });
-  }
+            if (loaderWrapper) loaderWrapper.style.opacity = '0';
+            setTimeout(() => {
+                if (loaderWrapper) loaderWrapper.style.display = 'none';
+                if (videoContainer) videoContainer.style.display = 'none';
+                if (promo) promo.style.display = 'flex';
+            }, 350);
+        }
 
-  renderActive();
+        function initPlayer(mp4Link) {
+            const loaderWrapper = document.getElementById('loader-wrapper');
+            const videoContainer = document.getElementById('video-container');
+            const playerElement = document.getElementById('player');
 
-  setInterval(renderActive, 15000);
-  </script>
+            while (playerElement.firstChild) {
+                playerElement.removeChild(playerElement.firstChild);
+            }
+
+            const sourceElement = document.createElement('source');
+            sourceElement.src = mp4Link;
+            sourceElement.type = 'video/mp4';
+            playerElement.appendChild(sourceElement);
+
+            if (videoContainer) videoContainer.style.display = 'block';
+
+            if (loaderWrapper) {
+                loaderWrapper.style.opacity = '0';
+                setTimeout(() => {
+                    if (loaderWrapper) loaderWrapper.style.display = 'none';
+
+                    const player = new Plyr('#player', {
+                        controls: [
+                            'play-large', 'play', 'progress', 'current-time', 
+                            'duration', 'mute', 'volume', 'captions', 
+                            'settings', 'pip', 'fullscreen'
+                        ],
+                        hideControls: true,
+                        autoplay: true
+                    });
+
+                    player.play().catch(e => {
+                        console.log('Auto-play não permitido, aguardando interação do usuário');
+                    });
+
+                }, 500);
+            }
+        }
+    </script>
 </body>
 </html>
