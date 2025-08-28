@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Vídeo</title>
+    
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .url-input-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #2a2a2a;
+            border-radius: 10px;
+        }
+        
+        .url-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ff0000;
+            border-radius: 5px;
+            background: #1a1a1a;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .load-button {
+            background: #ff0000;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .load-button:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+        }
+        
+        #loader-wrapper {
+            text-align: center;
+            padding: 50px;
+            transition: opacity 0.5s ease;
+        }
+        
+        #video-container {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        #promo-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .promo-button {
+            background: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .promo-button:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #ff0000;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* ===== CUSTOMIZAÇÃO DO PLYR EM VERMELHO ===== */
+        .plyr--video .plyr__progress__buffer {
+            color: rgba(255, 0, 0, 0.3);
+        }
+        
+        .plyr--video .plyr__progress__container::-webkit-progress-value {
+            background-color: #ff0000;
+        }
+        
+        .plyr--video .plyr__volume input[type="range"] {
+            color: #ff0000;
+        }
+        
+        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
+        }
+        
+        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-thumb {
+            background: #ff0000;
+            border: 2px solid #ffffff;
+        }
+        
+        .plyr--video .plyr__control--overlaid {
+            background: rgba(255, 0, 0, 0.8);
+        }
+        
+        .plyr--video .plyr__control--overlaid:hover {
+            background: rgba(255, 0, 0, 1);
+        }
+        
+        .plyr--video .plyr__controls button:hover {
+            background: rgba(255, 0, 0, 0.1);
+        }
+        
+        .plyr--video .plyr__time--current {
+            color: #ff0000;
+        }
+        
+        .plyr__volume__display {
+            background: #ff0000 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Input para URL -->
+        <div class="url-input-container">
+            <h2>🔗 Player com API</h2>
+            <p>Cole o link do vídeo que deseja assistir:</p>
+            <input type="url" class="url-input" id="videoUrl" 
+                   placeholder="https://www.mediafire.com/file/... ou qualquer link de vídeo"
+                   value="https://www.mediafire.com/file_premium/frsfla6dgg6ohzv/diamantes-roubados-o-golpe-do-seculo-ov-1513598-DUB.mp4">
+            <button class="load-button" onclick="loadVideo()">🎬 Carregar Vídeo</button>
+        </div>
+        
+        <!-- Loader -->
+        <div id="loader-wrapper" style="display: none;">
+            <div class="spinner"></div>
+            <div id="status-message">Preparando vídeo...</div>
+        </div>
+        
+        <!-- Video Container -->
+        <div id="video-container">
+            <video 
+                id="player" 
+                playsinline 
+                controls 
+                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                <!-- A fonte será adicionada via JavaScript -->
+            </video>
+        </div>
+        
+        <!-- Promo Container -->
+        <div id="promo-container">
+            <h2>Conteúdo Exclusivo</h2>
+            <p>Este vídeo é privado. Acesse o CineSocial para conteúdo premium!</p>
+            <button class="promo-button" onclick="window.open('https://cinesocial.club/page3.php', '_blank')">
+                🔥 Acessar CineSocial
+            </button>
+        </div>
+    </div>
+
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script>
+        // Variável global para o player
+        let player;
+        
+        // Função principal para carregar vídeo
+        function loadVideo() {
+            const videoUrl = document.getElementById('videoUrl').value.trim();
+            
+            if (!videoUrl) {
+                alert('Por favor, cole um link válido');
+                return;
+            }
+            
+            // Codifica a URL para uso na API
+            const encodedUrl = encodeURIComponent(videoUrl);
+            const apiUrl = `https://cdn2.my1-onifile.lol/api/api1.php?hash=97077684142325892864&url=${encodedUrl}`;
+            
+            fetchVideoLink(apiUrl);
+        }
+        
+        // Função para buscar o link através da API
+        async function fetchVideoLink(apiUrl) {
+            showLoader();
+            
+            const maxAttempts = 30;
+            let attempt = 0;
+            const statusElement = document.getElementById('status-message');
+
+            while (attempt < maxAttempts) {
+                attempt++;
+                if (statusElement) {
+                    statusElement.textContent = `Preparando vídeo... ${attempt}/${maxAttempts}`;
+                }
+
+                try {
+                    const response = await fetch(apiUrl + '&t=' + Date.now());
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+                    const mp4Link = (await response.text()).trim();
+
+                    if (!mp4Link || !isValidUrl(mp4Link)) {
+                        throw new Error('URL inválida retornada pela API');
+                    }
+
+                    if (isBlocked(mp4Link)) {
+                        showPromo();
+                        return;
+                    }
+
+                    initPlayer(mp4Link);
+                    return;
+                    
+                } catch (error) {
+                    console.error('Erro na tentativa', attempt, error);
+                    if (attempt < maxAttempts) {
+                        await new Promise(resolve => setTimeout(resolve, 1500));
+                    }
+                }
+            }
+
+            hideLoader();
+            alert('Não foi possível carregar o vídeo. Tente novamente.');
+        }
+        
+        // Funções auxiliares
+        function isValidUrl(string) {
+            try { 
+                new URL(string); 
+                return true; 
+            } catch (_) { 
+                return false; 
+            }
+        }
+        
+        function isBlocked(url) {
+            if (!url) return false;
+            const clean = url.trim().toLowerCase();
+            return clean.includes('block.com') || 
+                   clean.includes('blocked') || 
+                   clean.includes('private') ||
+                   clean.includes('restricted');
+        }
+        
+        function showLoader() {
+            document.getElementById('loader-wrapper').style.display = 'block';
+            document.getElementById('video-container').style.display = 'none';
+            document.getElementById('promo-container').style.display = 'none';
+        }
+        
+        function hideLoader() {
+            document.getElementById('loader-wrapper').style.display = 'none';
+        }
+        
+        function showPromo() {
+            hideLoader();
+            document.getElementById('promo-container').style.display = 'flex';
+        }
+        
+        // Inicializar o player
+        function initPlayer(mp4Link) {
+            const videoContainer = document.getElementById('video-container');
+            const playerElement = document.getElementById('player');
+            
+            // Limpa sources existentes
+            while (playerElement.firstChild) {
+                playerElement.removeChild(playerElement.firstChild);
+            }
+            
+            // Adiciona a nova source
+            const sourceElement = document.createElement('source');
+            sourceElement.src = mp4Link;
+            sourceElement.type = 'video/mp4';
+            playerElement.appendChild(sourceElement);
+            
+            // Mostra o container do vídeo
+            videoContainer.style.display = 'block';
+            hideLoader();
+            
+            // Inicializa ou reinicializa o Plyr
+            if (player) {
+                player.destroy();
+            }
+            
+            player = new Plyr('#player', {
+                controls: [
+                    'play-large', 'play', 'progress', 'current-time', 
+                    'duration', 'mute', 'volume', 'captions', 
+                    'settings', 'pip', 'fullscreen'
+                ],
+                hideControls: true,
+                autoplay: true
+            });
+            
+            // Tenta reproduzir automaticamente
+            player.play().catch(e => {
+                console.log('Auto-play não permitido. Clique para reproduzir.');
+            });
+        }
+        
+        // Event listener para Enter no input
+        document.getElementById('videoUrl').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                loadVideo();
+            }
+        });
+        
+        // Exemplo de links pré-definidos (opcional)
+        const exampleLinks = [
+            'https://www.mediafire.com/file/premium/exemplo1/video1.mp4',
+            'https://www.mediafire.com/file/premium/exemplo2/video2.mp4'
+        ];
+        
+        // Função para carregar exemplo rápido (opcional)
+        function loadExample(index) {
+            if (index >= 0 && index < exampleLinks.length) {
+                document.getElementById('videoUrl').value = exampleLinks[index];
+                loadVideo();
+            }
+        }
+    </script>
+</body>
+</html>
