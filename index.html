@@ -1,334 +1,276 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player de Vídeo</title>
+    <title>Bazinga Animes - Player Responsivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- Plyr CSS -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://ssl.p.jwpcdn.com/player/v/8.7.6/jwplayer.js" type="text/javascript"></script>
+    <script type="text/javascript">jwplayer.key="ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=";</script>
+
+    <style type="text/css" media="screen">
+        /* Remove qualquer espaçamento e força o fundo preto */
+        html, body {
+            padding: 0;
             margin: 0;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: white;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
         }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+
+        /* Container que envelopa o player ocupando o tamanho exato da tela */
+        .player-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
-        
-        #loader-wrapper {
-            text-align: center;
-            padding: 50px;
-            transition: opacity 0.5s ease;
+
+        #video-player {
+            width: 100% !important;
+            height: 100% !important;
         }
-        
-        #video-container {
-            display: none;
-            margin-top: 20px;
-        }
-        
-        #promo-container {
-            display: none;
-            flex-direction: column;
+
+        /* ==========================================================================
+           POPUP RESPONSIVA: "VOLTAR DE ONDE PAROU"
+           ========================================================================== */
+        .resume_video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 50px;
+            z-index: 9999;
+            padding: 15px;
+            box-sizing: border-box;
         }
-        
-        /* BOTÃO VERMELHO */
-        .promo-button {
-            background: #ff0000;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+
+        .resume_video:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+        }
+
+        .resume_video .resume_container {
+            position: relative;
+            background: #0d0d0d;
+            color: #eee;
+            border: 2px solid #ff6600;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            max-width: 480px; /* Alinhamento perfeito em PC e Celular */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 30px rgba(255, 102, 0, 0.3);
+        }
+
+        .resume_video .resume_header {
+            background-color: #141414;
+            border-bottom: 1px solid rgba(255, 102, 0, 0.2);
+            color: #ff6600;
             font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            padding: 15px;
+            margin: -20px -20px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .resume_video .resume_container .align > p {
+            font-size: 14px;
+            color: #b3b3b3;
+            margin-top: 15px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .resume_video .resume_container .flex {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
-            font-weight: bold;
+        }
+
+        .resume_video .resume_container bt {
+            background: #1a1a1a;
+            border: 1px solid #ff6600;
+            width: 48%;
+            color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 12px 5px;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
             transition: all 0.3s ease;
+            cursor: pointer;
+            box-sizing: border-box;
         }
-        
-        .promo-button:hover {
-            background: #cc0000;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+
+        .resume_video .resume_container bt:hover {
+            background: #ff6600;
+            color: #000;
+            box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
         }
-        
-        .promo-button:active {
-            background: #990000;
-            transform: translateY(0);
+
+        /* ==========================================================================
+           CUSTOMIZAÇÃO DO JW PLAYER (CORES DO CONTROLE)
+           ========================================================================== */
+        .jw-reset .jw-progress {
+            background: #ff6600 !important;
         }
-        
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #ff0000;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
+        .jw-reset .jw-knob, .jw-reset .jw-text-track-cue {
+            background-color: #ff6600 !important;
         }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .jw-reset .jw-button-container .jw-icon:hover, 
+        .jw-reset .jw-toggle.jw-off:hover,
+        .jw-reset .jw-settings-submenu .jw-settings-item.jw-active-option {
+            color: #ff6600 !important;
+            fill: #ff6600 !important;
         }
-        
-        /* ===== CUSTOMIZAÇÃO DO PLYR EM VERMELHO ===== */
-        
-        /* Barra de progresso principal - VERMELHA */
-        .plyr--video .plyr__progress__buffer {
-            color: rgba(255, 0, 0, 0.3);
+        .jw-reset .jw-button-container div.jw-icon-rewind {
+            display: none !important;
         }
-        
-        .plyr--video .plyr__progress__container::-webkit-progress-value {
-            background-color: #ff0000;
-        }
-        
-        /* Barra de progresso preenchida - VERMELHA */
-        .plyr--video .plyr__progress__container::-moz-progress-bar {
-            background-color: #ff0000;
-        }
-        
-        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-webkit-progress-value {
-            background-color: #ff0000;
-        }
-        
-        .plyr--video .plyr__volume--horizontal .plyr__volume__container::-moz-progress-bar {
-            background-color: #ff0000;
-        }
-        
-        /* Controle de volume - VERMELHO */
-        .plyr--video .plyr__volume input[type="range"] {
-            color: #ff0000;
-        }
-        
-        /* Track da barra de volume */
-        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-runnable-track {
-            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
-        }
-        
-        .plyr--video .plyr__volume input[type="range"]::-moz-range-track {
-            background: linear-gradient(to right, #ff0000 var(--value, 0%), rgba(255, 0, 0, 0.3) var(--value, 0%));
-        }
-        
-        /* Thumb da barra de volume */
-        .plyr--video .plyr__volume input[type="range"]::-webkit-slider-thumb {
-            background: #ff0000;
-            border: 2px solid #ffffff;
-        }
-        
-        .plyr--video .plyr__volume input[type="range"]::-moz-range-thumb {
-            background: #ff0000;
-            border: 2px solid #ffffff;
-        }
-        
-        /* Barra de volume horizontal */
-        .plyr--video .plyr__volume--horizontal .plyr__volume__display {
-            background: #ff0000;
-        }
-        
-        /* Hover nos controles */
-        .plyr--video .plyr__controls button:hover, 
-        .plyr--video .plyr__controls button:focus {
-            background: rgba(255, 0, 0, 0.1);
-        }
-        
-        /* Botão play grande */
-        .plyr--video .plyr__control--overlaid {
-            background: rgba(255, 0, 0, 0.8);
-        }
-        
-        .plyr--video .plyr__control--overlaid:hover {
-            background: rgba(255, 0, 0, 1);
-        }
-        
-        /* Menu e controles */
-        .plyr--video .plyr__menu__container .plyr__control:hover {
-            background: rgba(255, 0, 0, 0.1);
-        }
-        
-        /* Tooltips */
-        .plyr--video .plyr__tooltip {
-            background: #ff0000;
-        }
-        
-        .plyr--video .plyr__tooltip::before {
-            border-top-color: #ff0000;
-        }
-        
-        /* Time current em destaque */
-        .plyr--video .plyr__time--current {
-            color: #ff0000;
-        }
-        
-        /* ===== ESTILOS ESPECÍFICOS PARA A BARRA DE VOLUME ===== */
-        .plyr__volume[data-plyr="volume"] {
-            color: #ff0000 !important;
-        }
-        
-        .plyr__volume__display {
-            background: #ff0000 !important;
-        }
-        
-        /* Garantindo que todas as barras fiquem vermelhas */
-        .plyr--full-ui input[type="range"] {
-            color: #ff0000 !important;
-        }
-        
-        /* Progresso do buffer */
-        .plyr__progress__buffer {
-            color: rgba(255, 0, 0, 0.3) !important;
+
+        /* Correção para os botões adicionais não quebrarem em telas muito pequenas */
+        @media scope and (max-width: 420px) {
+            .jw-controlbar {
+                padding: 0 5px !important;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Loader -->
-        <div id="loader-wrapper">
-            <div class="spinner"></div>
-            <div id="status-message">Preparando vídeo... 0</div>
-        </div>
-        
-        <!-- Video Container -->
-        <div id="video-container">
-            <video 
-                id="player" 
-                playsinline 
-                controls 
-                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
-                <!-- A fonte será adicionada via JavaScript -->
-            </video>
-        </div>
-    </div>
 
-    <!-- Plyr JS -->
-    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetchVideoLink();
-        });
+    <main class="player-wrapper">
+        <div id="video-player"></div>
+    </main>
 
-        async function fetchVideoLink() {
-            const maxAttempts = 50;
-            let attempt = 0;
-            const statusElement = document.getElementById('status-message');
+    <script type="text/javascript">
+    // Captura dinâmica da URL de vídeo via parâmetro GET (?d=)
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoUrl = urlParams.get('d') || 'https://cdn.imagesskill.com/stream/t/tsue-to-tsurugi-no-wistoria-2/12.mp4/index.m3u8';
+
+    var player = jwplayer('video-player');
+    const playerInstance = player.setup({
+        playlist: [{
+            id: 'player',
+            image: '',
+            sources: [{
+                type: "video/mp4",
+                label: "720p HD",
+                file: videoUrl
+            }],
+            type: "video/mp4"
+        }],
+        debug: false,
+        width: "100%",
+        height: "100%",
+        autostart: true, // Começa rodando direto
+        preload: true,
+        key: "64HPbvSQorQcd52B8XFuhMtEoitbvY/EXJmMBfKcXZQU2Rnn",
+        localization: {
+            fullscreen: 'Tela Cheia',
+            videoInfo: 'Sobre este vídeo',
+            rewind: 'Voltar 10s',
+            settings: 'Qualidade'
+        },
+    });
+
+    // Salva o progresso
+    playerInstance.on('time', function(e) {
+        Cookies.set('resumevideodata-', Math.floor(e.position) + ':' + playerInstance.getDuration(), { expires: 7 });
+    });
+
+    playerInstance.setVolume(70);
+    var playID = 'video-player';
+
+    // Sistema de continuar de onde parou
+    playerInstance.once('play', function() {
+        let currentPosition = Cookies.get('resumevideodata-');
+        if (currentPosition) {
+            const parts = currentPosition.split(':');
+            const resumeAt = parseInt(parts[0], 10);
             
-            const apiUrl = `https://cdn2.my1-onifile.lol/api/api1.php?hash=97077684142325892864&url=https://www.mediafire.com/file_premium/frsfla6dgg6ohzv/diamantes-roubados-o-golpe-do-seculo-ov-1513598-DUB.mp4`;
+            if (resumeAt > 10) { 
+                playerInstance.pause();
+                
+                var box = '<div class="resume_video">' +
+                            '<div class="resume_container">' +
+                                '<div class="resume_header">Continuar Assistindo?</div>' +
+                                '<div class="align">' +
+                                    '<p>Você já começou a assistir esse episódio. Deseja continuar do minuto <strong>' + millisToMinutesAndSeconds(resumeAt) + '</strong>?</p>' +
+                                    '<div class="flex">' +
+                                        '<bt data-time="' + resumeAt + '">Sim</bt>' +
+                                        '<bt data-time="0">Não</bt>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                          '</div>';
+                
+                $("#" + playID).append(box);
 
-            while (attempt < maxAttempts) {
-                attempt++;
-                if (statusElement) {
-                    statusElement.textContent = `Preparando vídeo... ${attempt}`;
-                }
-
-                try {
-                    const response = await fetch(apiUrl + '&t=' + Date.now());
-                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-                    const mp4Link = (await response.text()).trim();
-
-                    if (!mp4Link || !isValidUrl(mp4Link)) {
-                        throw new Error('URL inválida retornada pela API');
+                $(document).off('click', '.resume_video bt').on('click', '.resume_video bt', function() {
+                    var startIn = $(this).attr('data-time');
+                    $('.resume_video').remove();
+                    playerInstance.play();
+                    if (startIn > 0) {
+                        playerInstance.seek(startIn);
                     }
-
-                    if (isBlocked(mp4Link)) {
-                        showPromo();
-                        return;
-                    }
-
-                    initPlayer(mp4Link);
-                    return;
-                    
-                } catch (error) {
-                    console.error('Erro na tentativa', attempt, error);
-                    if (attempt < maxAttempts) {
-                        await new Promise(resolve => setTimeout(resolve, 2000));
-                    }
-                }
-            }
-
-            if (statusElement) {
-                statusElement.textContent = 'Não foi possível carregar o vídeo. Recarregando...';
-            }
-            setTimeout(() => location.reload(), 3000);
-        }
-
-        function isValidUrl(string) {
-            try { 
-                new URL(string); 
-                return true; 
-            } catch (_) { 
-                return false; 
+                });
             }
         }
+    });
 
-        function isBlocked(url) {
-            if (!url) return false;
-            const clean = url.trim().toLowerCase();
-            return clean.includes('block.com') || 
-                   clean.includes('blocked') || 
-                   clean.includes('private');
-        }
+    function millisToMinutesAndSeconds(time) {
+        var min = Math.floor(time / 60);
+        var sec = time % 60;
+        if (sec < 10) { sec = '0' + sec; }
+        return min + ':' + sec;
+    }
 
-        function showPromo() {
-            const loaderWrapper = document.getElementById('loader-wrapper');
-            const videoContainer = document.getElementById('video-container');
-            const promo = document.getElementById('promo-container');
-
-            if (loaderWrapper) loaderWrapper.style.opacity = '0';
-            setTimeout(() => {
-                if (loaderWrapper) loaderWrapper.style.display = 'none';
-                if (videoContainer) videoContainer.style.display = 'none';
-                if (promo) promo.style.display = 'flex';
-            }, 350);
-        }
-
-        function initPlayer(mp4Link) {
-            const loaderWrapper = document.getElementById('loader-wrapper');
-            const videoContainer = document.getElementById('video-container');
-            const playerElement = document.getElementById('player');
-
-            while (playerElement.firstChild) {
-                playerElement.removeChild(playerElement.firstChild);
+    // Botões customizados (Avançar, Voltar, PiP)
+    playerInstance.on('ready', function() {
+        playerInstance.addButton('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="#fff" class="jw-svg-icon"><path d="m 25.993957,57.778 v 125.3 c 0.03604,2.63589 2.164107,4.76396 4.8,4.8 h 62.7 v -19.3 h -48.2 v -96.4 H 160.99396 v 19.3 c 0,5.3 3.6,7.2 8,4.3 l 41.8,-27.9 c 2.93574,-1.480087 4.13843,-5.04363 2.7,-8 -0.57502,-1.174985 -1.52502,-2.124979 -2.7,-2.7 l -41.8,-27.9 c -4.4,-2.9 -8,-1 -8,4.3 v 19.3 H 30.893957 c -2.689569,0.03972 -4.860275,2.210431 -4.9,4.9 z m 163.422413,73.04577 c -3.72072,-6.30626 -10.38421,-10.29683 -17.7,-10.6 -7.31579,0.30317 -13.97928,4.29374 -17.7,10.6 -8.60009,14.23525 -8.60009,32.06475 0,46.3 3.72072,6.30626 10.38421,10.29683 17.7,10.6 7.31579,-0.30317 13.97928,-4.29374 17.7,-10.6 8.60009,-14.23525 8.60009,-32.06475 0,-46.3 z m -17.7,47.2 c -7.8,0 -14.4,-11 -14.4,-24.1 0,-13.1 6.6,-24.1 14.4,-24.1 7.8,0 14.4,11 14.4,24.1 0,13.1 -6.5,24.1 -14.4,24.1 z m -47.77056,9.72863 v -51 l -4.8,4.8 -6.8,-6.8 13,-12.99999 c 3.02543,-3.03598 8.21053,-0.88605 8.2,3.4 v 62.69999 z"></path></svg>', 'Avançar 10s', function() { playerInstance.seek(playerInstance.getPosition() + 10) }, 'forward10');
+        playerInstance.addButton('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="#fff" class="jw-svg-icon"><path d="M113.2,131.078a21.589,21.589,0,0,0-17.7-10.6,21.589,21.589,0,0,0-17.7,10.6,44.769,44.769,0,0,0,0,46.3,21.589,21.589,0,0,0,17.7,10.6,21.589,21.589,0,0,0,17.7-10.6,44.769,44.769,0,0,0,0-46.3Zm-17.7,47.2c-7.8,0-14.4-11-14.4-24.1s6.6-24.1,14.4-24.1,14.4,11,14.4,24.1S103.4,178.278,95.5,178.278Zm-43.4,9.7v-51l-4.8,4.8-6.8-6.8,13-13a4.8,4.8,0,0,1,8.2,3.4v62.7l-9.6-.1Zm162-130.2v125.3a4.867,4.867,0,0,1-4.8,4.8H146.6v-19.3h48.2v-96.4H79.1v19.3c0,5.3-3.6,7.2-8,4.3l-41.8-27.9a6.013,6.013,0,0,1-2.7-8,5.887,5.887,0,0,1,2.7-2.7l41.8-27.9c4.4-2.9,8-1,8,4.3v19.3H209.2A4.974,4.974,0,0,1,214.1,57.778Z"></path></svg>', 'Voltar 10s', function() { playerInstance.seek(playerInstance.getPosition() - 10) }, 'rewind10');
+        playerInstance.addButton('<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg" fill="#fff" class="jw-svg-icon"><path d="M38 22H22v11.99h16V22zm8 16V9.96C46 7.76 44.2 6 42 6H6C3.8 6 2 7.76 2 9.96V38c0 2.2 1.8 4 4 4h36c2.2 0 4-1.8 4-4zm-4 .04H6V9.94h36v28.1z"/><path d="M0 0h48v48H0V0z" fill="none"/></svg>', "Picture in Picture", function () {
+            var src = document.getElementsByClassName('jw-video'), fileSrc = src[0];
+            if (!document.pictureInPictureElement) {
+                fileSrc.requestPictureInPicture().catch(error => {});
+            } else {
+                document.exitPictureInPicture().catch(error => {});
             }
+        }, "pipPlayer");
+    });
 
-            const sourceElement = document.createElement('source');
-            sourceElement.src = mp4Link;
-            sourceElement.type = 'video/mp4';
-            playerElement.appendChild(sourceElement);
+    playerInstance.on("setupError", function() {
+        swal("Erro no Servidor!", "Ocorreu um problema ao configurar o player. Entre em contato com o suporte.", "error");
+    });
+    playerInstance.on("error" , function(){
+        swal("Vídeo indisponível!", "Não foi possível carregar o arquivo deste anime.", "error");
+    });
 
-            if (videoContainer) videoContainer.style.display = 'block';
-
-            if (loaderWrapper) {
-                loaderWrapper.style.opacity = '0';
-                setTimeout(() => {
-                    if (loaderWrapper) loaderWrapper.style.display = 'none';
-
-                    const player = new Plyr('#player', {
-                        controls: [
-                            'play-large', 'play', 'progress', 'current-time', 
-                            'duration', 'mute', 'volume', 'captions', 
-                            'settings', 'pip', 'fullscreen'
-                        ],
-                        hideControls: true,
-                        autoplay: true
-                    });
-
-                    player.play().catch(e => {
-                        console.log('Auto-play não permitido, aguardando interação do usuário');
-                    });
-
-                }, 500);
-            }
-        }
+    // Função JavaScript focada na responsividade instantânea no redimensionamento
+    $(document).ready(function(){
+        $(window).resize(function(){
+            playerInstance.resize($(window).width(), $(window).height());
+        });
+    });
     </script>
 </body>
 </html>
